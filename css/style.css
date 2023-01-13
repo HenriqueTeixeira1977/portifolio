@@ -29,13 +29,22 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100vw;
+    height: 50px;
     margin: 0;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 10px 0px 10px;
     color: var(--cor0);
     border-bottom: 2px solid var(--cor1);
 }
 header h1{
-    text-align: center;
+    background-color: rgb(0, 159, 159);
+    color: var(--cor0);
+    width: 50vw;
+    text-align: left;
+    font-size: 1em;
+
+
+
 }
 nav li {
     display: none;
@@ -47,10 +56,36 @@ nav li {
 nav a {
     color: var(--cor2);
 }
+
+
+
 .home{
-    background-color: #777777;
-    width: 450px;
+    background-color: var(--cor4);
+    width: 400px;
     height: 500px;
     margin: auto;
     padding: 10px;
+}
+.home h1{
+    background-color: var(--cor1);
+    color: var(--cor0);
+    width: 50%;
+}
+.home p{
+    color: var(--cor0);
+}
+.home a{
+
+}
+
+
+
+footer{
+    background-color: var(--cor5);
+    color: var(--cor0);
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: .8em;
+    
 }
