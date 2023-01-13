@@ -5,38 +5,52 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 /*  VARIÁVEIS DE CSS3  */
 :root {
-    --cor0: #c5ebd6;
-    --cor1: #83e1ad;
-    --cor2: #3ddc84;
-    --cor3: #2fa866;
-    --cor4: #1a5c37;
-    --cor5: #063d1e;
+    --cor0: #ffffff;
+    --cor1: #BF7F30;
+    --cor2: #C68F2F;
+    --cor3: #777777;
+    --cor4: #1b1a20;
+    --cor5: #000000;
 
     --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --fonte-destaque:
-    --fonte-android: 
 }
-
-
-
-
 
 html, body {
-    background-color: brown;
-    padding: 20px;
+    background-color: #0D0D0D;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
 header{
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0px 30px 0px 30px;
+    color: var(--cor0);
+    border-bottom: 2px solid var(--cor1);
 }
-
-header nav ul li a{
-    display: inline-block;
-    text-decoration: none;    
+header h1{
+    text-align: center;
+}
+nav li {
+    display: none;
+    text-decoration: none;
+    text-align: right;
+    list-style: none; 
+    color: var(--cor1);   
+}
+nav a {
+    color: var(--cor2);
+}
+.home{
+    background-color: #777777;
+    width: 450px;
+    height: 500px;
+    margin: auto;
+    padding: 10px;
 }
