@@ -81,7 +81,7 @@ main .home{
     margin: auto;
     padding: 10px 10px 10px 10px;
     background-color: var(--cor4);
-    background-image: url('/img/eu2021\(21\).png');
+    background-image: url('../img/henrique.png');
     background-repeat: no-repeat;
     background-position: right bottom;
 }
