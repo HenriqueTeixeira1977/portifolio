@@ -5,37 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henrique Teixeira - WebDeveloper</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header id="topo">
-        <section class="logo" id="logo">
-            <a href="#"><h1>Henrique Teixeira WebDeveloper</h1></a>
-        </section>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Soluções</a></li>
-                <li><a href="#">Portifólio</a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Contatos</a></li>
-                <li><a href="#">Orçamento</a></li>
-            </ul>
-            <span class="material-symbols-outlined">menu</span>
-            <span class="material-symbols-outlined">close</span>
-        </nav>
+        <div class="container">
+            <section class="logo" id="logo">
+                <a href="#"><h1>Henrique Teixeira <br> WebDeveloper</h1></a>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Soluções</a></li>
+                    <li><a href="#">Portifólio</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#">Orçamento</a></li>
+                </ul>
+                <!--<i id="burguer2" class="material-icons" onclick="clickMenu()">menu</i>-->
+                <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+                <i id="fechar" class="material-symbols-outlined">close</i>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="home" id="home">
-            <h1>Criando Sites Gerando Resultados</h1>
-            <p>Construo Websites personalizados e Otimizados para todos dispositivos.</p>         
-            <a href="#">Saiba Mais</a>  
-        </section>
+            <div class="home-text">
+                <h1>Criando <span>Sites</span> Gerando <span>Resultados</span></h1>
+                <p>Construo Websites Profissionais personalizados e Otimizados para todos dispositivos.</p>
+                <a href="#">Saiba Mais</a>
+            </div> 
+        </section>        
     </main>
     <footer>
         <p>Todos os direitos reservados&copy;2023 | Desenvolvido e Monitorado por</p>
@@ -43,4 +50,5 @@
         <span class="material-symbols-outlined">arrow_upward</span>
     </footer>    
 </body>
+<script src="js/script.js"></script>
 </html>
