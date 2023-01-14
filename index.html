@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henrique Teixeira - WebDeveloper</title>
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mediaquery.css">
-    
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/6d51c72916.js" crossorigin="anonymous"></script>
 
 </head>
 <body onresize="mudouTamanho()">
@@ -20,10 +20,12 @@
             <section class="logo" id="logo">
                 <a href="#"><h1>Henrique Teixeira <br> WebDeveloper</h1></a>
             </section>
+            <i class="fa-solid fa-bars" id="burguer" onclick="clickMenu()"></i>
+            <i class="fa-solid fa-xmark" id="fechar" ></i>
             <nav>
                 <ul>
                     <li><a href="#topo">Home</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#">Soluções</a></li>
                     <li><a href="#">Portifólio</a></li>
                     <li><a href="#">Depoimentos</a></li>
@@ -31,8 +33,9 @@
                     <li><a href="#">Orçamento</a></li>
                 </ul>
                 <!--<i id="burguer2" class="material-icons" onclick="clickMenu()">menu</i>-->
-                <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-                <i id="fechar" class="material-symbols-outlined">close</i>
+                <!--<i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>*/-->
+                <!--<i id="fechar" class="material-symbols-outlined">close</i>-->
+
             </nav>
         </div>
     </header>
@@ -49,16 +52,27 @@
         <section class="sobre" id="sobre">
             <div class="sobre-txt" id="sobre-txt">
                 <h2>Sobre Mim</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque atque non, est eveniet dignissimos placeat impedit autem quae illo, dicta ex voluptatibus voluptatem tempora cum corrupti cumque beatae ipsa!</p>
+                <p>Web designer freelancer, especializado em gerar mais resultados para o seu negócio,
+                    através de estratégias de marketing digital por meio da CRIAÇÃO DE SITE INSTITUCIONAIS, LANDING PAGES e PÁGINAS DE VENDAS
+                    com design centrado na experiencia de usuário e focado em conversão.
+                    Sua marca com mais credibilidade para seu negócio atrair muito mais clientes</p>
                 <a href="#" id="btn" >Saiba Mais</a>
             </div>
             
         </section>     
     </main>
     <footer>
-        <p>Todos os direitos reservados&copy;2023 | Desenvolvido e Monitorado por</p>
-        <p>Henrique Teixeira - WebDeveloper FrontEnd</p>
-        <span class="material-symbols-outlined">arrow_upward</span>
+        <section class="icons">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+        </section>
+        <section class="footer-txt">
+            <p>Todos os direitos reservados&copy;2023 | Desenvolvido e Monitorado por</p>
+            <p>Henrique Teixeira - WebDeveloper FrontEnd</p>
+        </section>
     </footer>    
 </body>
 <script src="js/script.js"></script>

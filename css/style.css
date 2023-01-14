@@ -72,6 +72,8 @@ nav li a {
 nav #fechar{
     display: none;
 }
+
+
 main .home{        
     display: flex;
     justify-content: center;
@@ -92,7 +94,7 @@ main .home-txt{
     align-items: center;
     width: 95vw;
     height: 70vh;
-    border: 1px solid var(--cor1);
+    /*border: 1px solid var(--cor1);*/
     padding: 5px;
 }
 main .home h1{
@@ -132,7 +134,7 @@ main .sobre{
     padding: 5px;
     margin: auto;
     width: 100vw;
-    height: 300px;
+    height: 380px;
 }
 main .sobre-txt{
     width: 95vw;
@@ -174,4 +176,11 @@ footer{
     padding: 10px;
     text-align: center;
     font-size: .8em;    
+}
+footer .icons{
+    font-size: 3em;
+    margin: 0px;
+    padding: 0px;
+}footer .footer-txt{
+    padding: 20px 0px;
 }

@@ -1,4 +1,4 @@
-/*<script>
+<script>
 
 function mudouTamanho() {
     if (window.innerWidth >= 768) {
@@ -15,4 +15,4 @@ function clickMenu() {
         itens.style.display = 'block'
     }
 }
-</script>*/
+</script>
