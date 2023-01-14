@@ -22,7 +22,7 @@
 }
 
 html, body {
-    background-color: #750000;
+    background-color: var(--cor5);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     height: calc(100vh - 70px);
 }
@@ -36,7 +36,7 @@ header{
     margin: auto;
     padding: 0px 0px 0px 0px;
     color: var(--cor0);
-    border-bottom: 2px solid var(--cor1);
+    border-bottom: 4px solid var(--cor1);
 }
 header .container{
     display: flex;
@@ -75,32 +75,36 @@ nav #fechar{
 main .home{        
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     width: 100vw;
     height: calc(100vh - 150px);
     margin: auto;
     padding: 10px 10px 10px 10px;
     background-color: var(--cor4);
     background-image: url('../img/henrique.png');
+    background-size: 40vh;
     background-repeat: no-repeat;
     background-position: right bottom;
 }
-main .home-text{
-    /*border: 1px solid var(--cor1);*/
+main .home-txt{
+    display: block;
+    justify-content: center;
+    align-items: center;
     width: 95vw;
-    padding-top: 10px;
+    height: 70vh;
+    border: 1px solid var(--cor1);
+    padding: 5px;
 }
 main .home h1{
-    display: block;
-    justify-content: top;
-    align-items: top;
-
     font-size: 3em;
     font-weight: 100;
     line-height: 60px;
     color: var(--cor0);
     width: 50%;
-    padding-top: 30px;
+}
+.home span{
+    color: var(--cor1);
+    font-weight: bolder;
 }
 main .home p{
     color: var(--cor0);
@@ -117,8 +121,54 @@ main .home a{
 main .home a:hover{
     background-color: var(--cor1);
 }
+
+
+main .sobre{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor5);
+    color: var(--cor0);
+    padding: 5px;
+    margin: auto;
+    width: 100vw;
+    height: 300px;
+}
+main .sobre-txt{
+    width: 95vw;
+    height: 285px;
+    margin: auto;
+    padding: 20px;
+}
+main .sobre h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+main .sobre p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+main .sobre #btn{    
+    display: block;
+    width: 200px;
+    color: var(--cor0);
+    background-color: var(--cor2);
+    margin: auto;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 1.3em;
+    text-align: center;
+    position: relative;
+    top: center;
+}
+
+
+
+
+
 footer{
     background-color: var(--cor5);
+    border-top: 2px solid var(--cor1);
     color: var(--cor0);
     display: block;
     padding: 10px;
