@@ -25,6 +25,7 @@ Grandes telas: acima de 1200px
         width: 100vw;
     }
 }
+
 /*  VERSION TABLET  */
 @media screen and (min-width: 601px) and (max-width: 768px){
     
