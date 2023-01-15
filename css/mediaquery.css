@@ -10,7 +10,7 @@ Grandes telas: acima de 1200px
 */
 
 /*  VERSION MOBILE  */
-/*@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
 
     .container #burguer {
     }
@@ -24,7 +24,7 @@ Grandes telas: acima de 1200px
         width: 100vw;
     }
 }
-*/
+
 
 
 

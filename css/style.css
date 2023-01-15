@@ -8,6 +8,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
 /*  VARIÁVEIS DE CSS3  */
 :root {
     --cor0: #ffffff;
@@ -78,16 +79,16 @@ nav{
     background-color: rgb(255, 0, 0);
 }
 nav li {
-    display: none;
+    display: block;
     text-decoration: none;
     text-align: right;
     list-style: none; 
     color: var(--cor1);   
 }
 nav li a {
+    display: none;
     background-color: #750000;  
     color: var(--cor2);
-    display: inline-block;
 }
 
 /*  ----------  SESSÃO HOME  ----------  */
@@ -194,6 +195,7 @@ main .sobre #btn2{
     position: relative;
     top: center;
 }
+
 /*  ----------  SESSÃO FOOTER  ----------  */
 footer{
     width: 100vw;
