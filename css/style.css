@@ -138,12 +138,14 @@ main .home #btn1:hover{
     background-color: var(--cor1);
 }
 main .home .icons{
-    height: 170px;
+    height: 150px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: bottom;
     margin: auto;
-    padding: 0px 0px 0px 0px;
+    padding: 100px 0px 0px 0px;
+
+    border: 2px solid red;
 }
 main .home .icons a{
     font-size: 1.5em;
