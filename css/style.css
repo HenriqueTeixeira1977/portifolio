@@ -24,14 +24,15 @@
 html, body {
     background-color: var(--cor5);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
 }
 /*  ----------  SESSÃO HEADER  ----------  */
 
 header{
     background-color: var(--cor3);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 70px;
@@ -98,6 +99,7 @@ nav li a {
     display: inline-block;
 }
 /*  ----------  SESSÃO HOME  ----------  */
+
 main .home{    
     display: block;
     justify-content: center;
@@ -106,30 +108,37 @@ main .home{
     width: 100vw;
     height: 85vh;
     margin: auto;
-    padding: 0% 0px;
+    padding: 0px 0px;
 
     background-color: var(--cor4);
     background-image: url('../img/henrique4.png');
-    background-size: 38vh;
+    background-size: 40vh;
     background-repeat: no-repeat;
     background-position: right bottom;
 
     border: 2px solid rgb(221, 255, 0);
 }
+
 main .home-txt{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 550px;
-    padding: 20px;
+    /*display: block;*/
+    /*justify-content: space-between;*/
+    /*align-items: center;*/
+    /*width: 100vw;*/
+    height: 470px;
+    padding: 30px 10px 0px 10px;
+
+    border: 2px solid rgb(255, 0, 0);
+
 }
 main .home h1{
     font-size: 3em;
     font-weight: 100;
     line-height: 60px;
     color: var(--cor0);
-    width: 50%;
+    height: 250px;
+    margin-top: 10px;
+    padding: 0px;
+    border: 2px solid rgb(4, 255, 0);
 }
 .home span{
     color: var(--cor1);
@@ -137,8 +146,11 @@ main .home h1{
 }
 main .home p{
     color: var(--cor0);
-    width: 60%;
-    padding: 10px 10px 30px 0px;
+    padding: 10px 10px 20px 0px;
+    font-size: 1.5em;
+
+    border: 1px solid rgb(0, 4, 255);
+
 }
 main #btn1{
     color: var(--cor0);
@@ -147,29 +159,30 @@ main #btn1{
     border-radius: 5px;
     font-size: 1.3em;
     margin-bottom: 50px;
+    border: 1px solid rgb(255, 255, 255);
+
 }
 main .home #btn1:hover{
     background-color: var(--cor1);
 }
 main .home .icons{
-    width: 100vw;
-    height: 10vh;
+    height: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
     margin: auto;
     padding: 0px 0px 0px 0px;
 
-    border: 2px solid red;
+    border: 2px solid rgb(43, 0, 255);
 }
 main .home .icons a{
-    font-size: 2em;
-    padding: 3px 10px 3px 10px;
+    font-size: 1.5em;
+    padding: 3px 10px 7px 10px;
     margin: 0px 10px;
     background-color: var(--cor2);
     color: var(--cor0);
-    border-radius: 3px;
+    border-radius: 5px;
+    border: 2px solid var(--cor0);
 }
 /*  ----------  SESSÃO SOBRE  ----------  */
 main .sobre{
