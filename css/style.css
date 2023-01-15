@@ -27,10 +27,10 @@ html, body {
     background-color: rgb(255, 255, 255);
     margin: auto;
 }
-/*  ----------  SESSÃO HEADER  ----------  */
 
+/*  ----------  SESSÃO HEADER  ----------  */
 header{
-    background-color: var(--cor3);
+    background-color: var(--cor5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +39,6 @@ header{
     margin: auto;
     color: var(--cor0);
     border-bottom: 4px solid var(--cor1);
-
-
 }
 header .container{
     display: flex;
@@ -50,9 +48,6 @@ header .container{
     width: 100vw;
     height: 70px;
     padding: 0px 20px 0px 20px;
-
-    border: 2px solid rgb(9, 255, 0);
-
 }
 header .container .logo h1{
     color: var(--cor0);
@@ -73,10 +68,6 @@ header .container #burguer {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-
-    border: 2px solid rgb(9, 255, 0);
-    background-color: rgb(0, 8, 255);
-
 }
 header .container #fechar{
     display: none;
@@ -98,37 +89,24 @@ nav li a {
     color: var(--cor2);
     display: inline-block;
 }
-/*  ----------  SESSÃO HOME  ----------  */
 
+/*  ----------  SESSÃO HOME  ----------  */
 main .home{    
     display: block;
     justify-content: center;
     align-items: center;
-    
     width: 100vw;
     height: 85vh;
     margin: auto;
-    padding: 0px 0px;
-
     background-color: var(--cor4);
     background-image: url('../img/henrique4.png');
     background-size: 40vh;
     background-repeat: no-repeat;
     background-position: right bottom;
-
-    border: 2px solid rgb(221, 255, 0);
 }
-
 main .home-txt{
-    /*display: block;*/
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
-    /*width: 100vw;*/
     height: 470px;
     padding: 30px 10px 0px 10px;
-
-    border: 2px solid rgb(255, 0, 0);
-
 }
 main .home h1{
     font-size: 3em;
@@ -138,19 +116,16 @@ main .home h1{
     height: 250px;
     margin-top: 10px;
     padding: 0px;
-    border: 2px solid rgb(4, 255, 0);
 }
 .home span{
     color: var(--cor1);
     font-weight: bolder;
 }
 main .home p{
+    height: 150px;
     color: var(--cor0);
-    padding: 10px 10px 20px 0px;
+    padding: 10px 10px 0px 0px;
     font-size: 1.5em;
-
-    border: 1px solid rgb(0, 4, 255);
-
 }
 main #btn1{
     color: var(--cor0);
@@ -158,9 +133,6 @@ main #btn1{
     padding: 3px 20px;
     border-radius: 5px;
     font-size: 1.3em;
-    margin-bottom: 50px;
-    border: 1px solid rgb(255, 255, 255);
-
 }
 main .home #btn1:hover{
     background-color: var(--cor1);
@@ -172,8 +144,6 @@ main .home .icons{
     align-items: center;
     margin: auto;
     padding: 0px 0px 0px 0px;
-
-    border: 2px solid rgb(43, 0, 255);
 }
 main .home .icons a{
     font-size: 1.5em;
@@ -184,6 +154,7 @@ main .home .icons a{
     border-radius: 5px;
     border: 2px solid var(--cor0);
 }
+
 /*  ----------  SESSÃO SOBRE  ----------  */
 main .sobre{
     width: 100vw;
@@ -191,22 +162,16 @@ main .sobre{
     display: block;
     justify-content: center;
     align-items: center;
-    
     background-color: var(--cor5);
     color: var(--cor0);
-    padding: 5px;
+    padding: 0px;
     margin: auto;
-
-    border: 1px solid rgb(0, 60, 255);
-
 }
 main .sobre-txt{    
-    height: 285px;
+    height: 299px;
+    height: 350px;
     margin: auto;
-    padding: 20px;
-    
-    border: 1px solid rgb(0, 255, 72);
-    
+    padding: 10px 20px 10px 20px;
 }
 main .sobre h2{
     text-align: center;
@@ -215,8 +180,6 @@ main .sobre h2{
 main .sobre p{
     text-align: justify;
     margin-bottom: 30px;
-
-
 }
 main .sobre #btn2{    
     display: block;
@@ -240,25 +203,20 @@ footer{
     padding: 0px 20px;
     margin: auto;
     text-align: center;
-    
     font-size: .8em;    
     background-color: var(--cor5);
     border-top: 2px solid var(--cor1);
     color: var(--cor0);
-
-    border: 3px solid rgb(5, 40, 218);
-
 }
 footer .icons {
     padding: 10px 0px 10px 0px;
 }
 footer .icons a{
-
     color: var(--cor0);
     font-size: 2em;
     margin: 0px;
     padding: 5px 10px;
 }
 footer .footer-txt{
-    padding: 10px 0px;
+    padding: 10px 0px 30px 0px;
 }
