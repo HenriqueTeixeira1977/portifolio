@@ -144,12 +144,10 @@ main .home .icons{
     align-items: bottom;
     margin: auto;
     padding: 100px 0px 0px 0px;
-
-    border: 2px solid red;
 }
 main .home .icons a{
     font-size: 1.5em;
-    padding: 3px 10px 7px 10px;
+    padding: 5px 10px 7px 10px;
     margin: 0px 10px;
     background-color: var(--cor2);
     color: var(--cor0);
@@ -166,14 +164,14 @@ main .sobre{
     align-items: center;
     background-color: var(--cor5);
     color: var(--cor0);
-    padding: 0px;
+    padding: 30px 30px 30px 30px;
     margin: auto;
 }
 main .sobre-txt{    
     height: 299px;
     height: 350px;
     margin: auto;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 0px 0px 0px;
 }
 main .sobre h2{
     text-align: center;
