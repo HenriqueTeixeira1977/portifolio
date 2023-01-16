@@ -10,161 +10,29 @@ Grandes telas: acima de 1200px
 */
 
 /*  VERSION DESKTOP  */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-    
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+/*  ----------  SESSÃO HEADER  ----------  */    
     header .container{
-        width: 100vw;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        border: 5px solid rgb(106, 255, 0);
-    
+        width: 90vw;
+        padding: 0px 0px;
     }
     header .container #burguer {
         display: none;
     }
-    header .conteiner nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    header .container #fechar{
+        display: none;
+    }
+    nav ul li {
+        display: inline;
     }
     nav ul li a{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
+        display: inline-block;
+        align-items: center; 
+        padding: 0px 0px 0px 10px;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
     }
     
 /*  ----------  SESSÃO HOME  ----------  */
-    main .home{    
-        display: block;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 85vh;
-        margin: auto;
-        background-color: var(--cor4);
-        background-image: url('../img/imagem-home.png');
-        background-size: 40vh;
-        background-repeat: no-repeat;
-        background-position: right bottom;
-    }
-    main .home-txt{
-        height: 470px;
-        padding: 30px 10px 0px 10px;
-    }
-    main .home h1{
-        font-size: 3em;
-        font-weight: 100;
-        line-height: 60px;
-        color: var(--cor0);
-        height: 250px;
-        margin-top: 10px;
-        padding: 0px;
-    }
-    .home span{
-        color: var(--cor1);
-        font-weight: bolder;
-    }
-    main .home p{
-        height: 150px;
-        color: var(--cor0);
-        padding: 10px 10px 0px 0px;
-        font-size: 1.5em;
-    }
-    main #btn1{
-        color: var(--cor0);
-        background-color: var(--cor2);
-        padding: 3px 20px;
-        border-radius: 5px;
-        font-size: 1.3em;
-    }
-    main .home #btn1:hover{
-        background-color: var(--cor1);
-    }
-    main .home .icons{
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: bottom;
-        margin: auto;
-        padding: 100px 0px 0px 0px;
-    }
-    main .home .icons a{
-        font-size: 1.5em;
-        padding: 5px 10px 7px 10px;
-        margin: 0px 10px;
-        background-color: var(--cor2);
-        color: var(--cor0);
-        border-radius: 5px;
-        border: 2px solid var(--cor0);
-    }
 
-    /*  ----------  SESSÃO SOBRE  ----------  */
-    main .sobre{
-        width: 100vw;
-        height: 350px;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--cor5);
-        color: var(--cor0);
-        padding: 30px 30px 30px 30px;
-        margin: auto;
-    }
-    main .sobre-txt{    
-        height: 299px;
-        height: 350px;
-        margin: auto;
-        padding: 10px 0px 0px 0px;
-    }
-    main .sobre h2{
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    main .sobre p{
-        text-align: justify;
-        margin-bottom: 30px;
-    }
-    main .sobre #btn2{    
-        display: block;
-        width: 200px;
-        color: var(--cor0);
-        background-color: var(--cor2);
-        margin: auto;
-        padding: 3px 10px;
-        border-radius: 5px;
-        font-size: 1.3em;
-        text-align: center;
-        position: relative;
-        top: center;
-    }
-
-    /*  ----------  SESSÃO FOOTER  ----------  */
-    footer{
-        width: 100vw;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 20px;
-        margin: auto;
-        text-align: center;
-        font-size: .8em;    
-        background-color: var(--cor5);
-        border-top: 2px solid var(--cor1);
-        color: var(--cor0);
-    }
-    footer .icons {
-        padding: 10px 0px 10px 0px;
-    }
-    footer .icons a{
-        color: var(--cor0);
-        font-size: 2em;
-        margin: 0px;
-        padding: 5px 10px;
-    }
-    footer .footer-txt{
-        padding: 10px 0px 30px 0px;
-    }
 }

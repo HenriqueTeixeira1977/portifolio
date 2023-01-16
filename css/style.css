@@ -23,7 +23,7 @@
 html, body {
     background-color: var(--cor5);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--cor4);
     margin: auto;
 }
 
@@ -63,7 +63,7 @@ header .container i {
     align-items: center;
 }
 header .container #burguer {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-size: 2em;
@@ -74,77 +74,104 @@ header .container #fechar{
     display: none;
 }
 nav{
-    background-color: #1b1a20ef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     display: block;
-    background-color: rgb(77, 0, 0);
 }
 nav li {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-decoration: none;
     text-align: right;
     list-style: none; 
     color: var(--cor1);   
 }
 nav li a {
-    display: none;
-    background-color: #750000;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: var(--cor2);
 }
-*/
+
 /*  ----------  SESSÃO HOME  ----------  */
 main .home{    
     display: block;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 85vh;
+    height: 100vh;
     margin: auto;
     background-color: var(--cor4);
-    background-image: url('../img/henrique4.png');
+
+    background-image: url('../img/henrique4.png');  
     background-size: 40vh;
     background-repeat: no-repeat;
     background-position: right bottom;
 }
 main .home-txt{
-    height: 470px;
-    padding: 30px 10px 0px 10px;
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95vw;
+    height: 400px;
+    margin: 10px 10px;
+    padding: 50px 0px 0px 0px;
 }
 main .home h1{
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 3em;
     font-weight: 100;
     line-height: 60px;
     color: var(--cor0);
-    height: 250px;
-    margin-top: 10px;
-    padding: 0px;
+    width: 60vw;
+    height: 230px;
+    margin-top: 0px;
+    padding: 0px 0px 0px 0px;
 }
 .home span{
     color: var(--cor1);
     font-weight: bolder;
 }
 main .home p{
-    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70vw;
+    height: 100px;
     color: var(--cor0);
-    padding: 10px 10px 0px 0px;
-    font-size: 1.5em;
+    padding: 0px 0px 0px 0px;
+    font-size: 1.1em;
 }
 main #btn1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px 50px 50px;
+    padding: 10px 0px;
+    text-align: center;
     color: var(--cor0);
     background-color: var(--cor2);
-    padding: 3px 20px;
     border-radius: 5px;
-    font-size: 1.3em;
+    font-size: 2em;
 }
 main .home #btn1:hover{
     background-color: var(--cor1);
 }
+main .home-img{
+    display: none;
+}
 main .home .icons{
-    height: 150px;
+    width: 97vw;
+
     display: flex;
     justify-content: center;
     align-items: bottom;
     margin: auto;
-    padding: 100px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 main .home .icons a{
     font-size: 1.5em;
@@ -153,7 +180,7 @@ main .home .icons a{
     background-color: var(--cor2);
     color: var(--cor0);
     border-radius: 5px;
-    border: 2px solid var(--cor0);
+    border: 2px solid var(--cor0)
 }
 
 /*  ----------  SESSÃO SOBRE  ----------  */
@@ -169,14 +196,13 @@ main .sobre{
     margin: auto;
 }
 main .sobre-txt{    
-    height: 299px;
-    height: 350px;
+    height: 250px;
     margin: auto;
     padding: 10px 0px 0px 0px;
 }
 main .sobre h2{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 main .sobre p{
     text-align: justify;
@@ -196,13 +222,42 @@ main .sobre #btn2{
     top: center;
 }
 
+/*  ----------  SESSÃO SOLUÇÕES  ----------  */
+main .solucoes{
+    width: 100vw;
+    height: 700px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: var(--cor4);
+
+    text-align: center;
+    color: var(--cor0);
+    padding: 30px 10px 10px 10px;
+}
+.cards {
+    margin: 0px;
+    padding: 10px;
+    text-align: justify;
+}
+.card {
+    margin: 10px 0px;
+    padding: 20px 20px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+  
+
+
 /*  ----------  SESSÃO FOOTER  ----------  */
 footer{
     width: 100vw;
     display: block;
     justify-content: center;
     align-items: center;
-    padding: 0px 20px;
+    padding: 10px 20px;
     margin: auto;
     text-align: center;
     font-size: .8em;    
@@ -217,7 +272,7 @@ footer .icons a{
     color: var(--cor0);
     font-size: 2em;
     margin: 0px;
-    padding: 5px 10px;
+    padding: 15px 10px;
 }
 footer .footer-txt{
     padding: 10px 0px 30px 0px;

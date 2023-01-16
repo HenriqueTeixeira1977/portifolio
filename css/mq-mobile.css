@@ -10,8 +10,8 @@ Grandes telas: acima de 1200px
 */
 
 /*  VERSION TABLET  */
-@media screen and (min-width: 481px) and (max-width: 768px){
-/*  ----------  SESSÃO HEADER  ----------  */    
+@media screen and (min-width: 0px) and (max-width: 480px){
+/*  ----------  SESSÃO HEADER  ----------  */   
     header .container{
         width: 100vw;
         display: flex;
@@ -19,12 +19,12 @@ Grandes telas: acima de 1200px
         align-items: center;
     }
     header .container #burguer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
 
-        border: 5px solid rgb(106, 255, 0);
+    border: 5px solid rgb(255, 0, 0);
     }
     nav {
         display: none;
@@ -37,4 +37,5 @@ Grandes telas: acima de 1200px
 
     
 /*  ----------  SESSÃO HOME  ----------  */
+
 }
