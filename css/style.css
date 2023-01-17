@@ -29,15 +29,24 @@ html, body {
 
 /*  ----------  SESSÃO HEADER  ----------  */
 header{
-    background-color: var(--cor5);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    height: 70px;
-    margin: auto;
+/*
+    background-color: var(--cor5);
     color: var(--cor0);
     border-bottom: 4px solid var(--cor1);
+*/
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
 }
 header .container{
     display: flex;
@@ -51,8 +60,8 @@ header .container{
 header .container .logo h1{
     color: var(--cor0);
     text-align: left;
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 1.5em;
+    font-weight: 100;
     line-height: 20px;
 }
 header .container i {
@@ -73,12 +82,10 @@ header .container #burguer {
 header .container #fechar{
     display: none;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav ul{
     display: block;
 }
+/*
 nav li {
     display: flex;
     justify-content: space-between;
@@ -86,14 +93,22 @@ nav li {
     text-decoration: none;
     text-align: right;
     list-style: none; 
-    color: var(--cor1);   
-}
+    color: var(--cor0);   
+}*/
 nav li a {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    color: var(--cor2);
+    align-items: right;
+    color: var(--cor1);
+
+    transition: all .45s ease;
 }
+nav li a:hover {
+
+    color: var(--cor3);
+
+
+}
+
 
 /*  ----------  SESSÃO HOME  ----------  */
 main .home{    
@@ -145,6 +160,8 @@ main .home p{
     color: var(--cor0);
     padding: 0px 0px 0px 0px;
     font-size: 1.1em;
+
+
 }
 main #btn1{
     display: block;
@@ -157,6 +174,8 @@ main #btn1{
     background-color: var(--cor2);
     border-radius: 5px;
     font-size: 2em;
+
+    border: 2px solid var(--cor0);
 }
 main .home #btn1:hover{
     background-color: var(--cor1);
@@ -176,11 +195,13 @@ main .home .icons{
 main .home .icons a{
     font-size: 1.5em;
     padding: 5px 10px 7px 10px;
-    margin: 0px 10px;
+    margin: 120px 10px;
     background-color: var(--cor2);
     color: var(--cor0);
     border-radius: 5px;
     border: 2px solid var(--cor0)
+
+
 }
 
 /*  ----------  SESSÃO SOBRE  ----------  */
