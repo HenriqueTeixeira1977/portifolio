@@ -81,10 +81,10 @@ header .container #burguer {
 }
 header .container #fechar{
     display: none;
-}
+}/*
 nav ul{
     display: block;
-}
+}*/
 /*
 nav li {
     display: flex;
