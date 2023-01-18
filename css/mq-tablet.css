@@ -11,30 +11,85 @@ Grandes telas: acima de 1200px
 
 /*  VERSION TABLET  */
 @media screen and (min-width: 481px) and (max-width: 768px){
-/*  ----------  SESSÃO HEADER  ----------  */    
-    header .container{
-        width: 100vw;
+/*  ----------  SESSÃO HEADER  ----------  */   
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background: transparent;
+        padding: 0px 3%;
+        border-bottom: 1px solid transparent;
+        transition: all .45s ease;
+    }
+    header .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width: 100vw;
+        height: 70px;
+        padding: 0px 0px 0px 0px;
+        border: 2px solid rgb(255, 242, 0);
+    }
+    header .container .logo h1{
+        color: var(--cor0);
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: 100;
+        line-height: 20px;
+    }
+    header .container i {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     header .container #burguer {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         font-size: 2em;
 
-        border: 5px solid rgb(106, 255, 0);
+        border: 5px solid red;
     }
-    nav {
+    header .container #fechar{
         display: none;
     }
-    nav ul li a{
-        display: flex;
+    nav li a {
         justify-content: space-between;
-        align-items: center;
+        align-items: right;
+        color: var(--cor1);
+        transition: all .45s ease;
+    }
+    nav li a:hover {
+        color: var(--cor3);
+    }
+
+    header.sticky{
+        background-color: var(--cor5);
+        border-bottom: 2px solid var(--cor2);
+        padding: 10px 3%;
     }
 
     
 /*  ----------  SESSÃO HOME  ----------  */
+    main .home {
+        display: flex;
+        justify-content: space-between;
+        padding: 160px 10% 120px;
+
+        border: 2px solid greenyellow;    
+    }
+
+
+
+
+
+
 }

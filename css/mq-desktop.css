@@ -19,7 +19,15 @@
     --cor5: #000000;
 
     --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --fonte-destaque:
+    --fonte-destaque: Arial;
+    
+    --fonte-tam-xxgrande: 5em; 
+    --fonte-tam-xgrande: 3em; 
+    --fonte-tam-grande: 2em; 
+    --fonte-tam-normal: 1em; 
+    --fonte-tam-pequena: .8em; 
+    --fonte-tam-xpequena: .5em; 
+
 }
 html, body {
     background-color: var(--cor5);
@@ -37,8 +45,8 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 
 
-/*  VERSION TELAS GRANDES  */
-@media screen and (min-width: 992px) and (max-width: 1279px){
+/*  VERSION DESKTOPS  */
+@media screen and (min-width: 992px){
 
 /*----------  HEADER SECTION  ----------*/    
     header{
@@ -48,12 +56,14 @@ Grandes telas: acima de 1200px
         right: 0;
         z-index: 1000;
         display: flex;
-        justify-content: space-betw;
+        justify-content: space-between;
         align-items: center;
         background: transparent;
-        padding: 22px 15%;
+        padding: 20px 10%;
         border-bottom: 1px solid transparent;
         transition: all .45s ease;
+        border: 2px solid red;
+
     }
     header section{
         display: flex;
@@ -63,9 +73,9 @@ Grandes telas: acima de 1200px
     }
     header section .logo h1{
         color: var(--cor0);
-        font-size: 30px;
+        font-size: var(--fonte-tam-normal);
         font-weight: 100;
-        line-height: 30px;
+        line-height: 20px;
     }
     span{
         color: var(--cor2);
@@ -75,9 +85,9 @@ Grandes telas: acima de 1200px
     }
     header section nav ul li a {
         color: var(--cor2);
-        font-size: 1.1em;
+        font-size: var(--fonte-tam-normal);
         font-weight: 500;
-        margin: 0 10px;
+        margin: 0 5px;
         transition: all .45s ease;
     }
     header section nav ul li a:hover{
@@ -94,11 +104,10 @@ Grandes telas: acima de 1200px
         margin-left: 25;
         display: none;
     }   
-
     header.sticky{
         background-color: var(--cor5);
         border-bottom: 2px solid var(--cor2);
-        padding: 12px 15%;
+        padding: 12px 10%;
     }
 
 
@@ -107,39 +116,41 @@ Grandes telas: acima de 1200px
 /*----------  HOME SECTION  ----------*/    
     main .home {
         display: flex;
-        justify-content: space-around;
-        padding: 160px 15% 120px;
+        justify-content: space-between;
+        padding: 160px 10% 120px;
+    
+        border: 2px solid greenyellow;    
     }
+
     .home{
         position: relative;
         height: 100vh;
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        /*
-        background-image: url(../img/bg1.jpg);
-        background-size: cover;
-        background-position: center;*/
-    }
+        justify-content: space-between;
+        }
     .home-txt{
+        width: 100%;
         display: block;
-        padding: 10px;
+        margin: 0 10px;
+        padding: 0px;    
+        border: 2px solid red;
     }
     .home-txt h1{
-        font-size: 5em;
+        font-size:var(--fonte-tam-xgrande);
         font-weight: 700;
         color: var(--cor0);
         line-height: 1.1;
         margin: 0 0 8px;
     }
     .home-txt p{
-        font-size: 2em;
+        font-size: 1.5rem;
         font-weight: 100;
         color: var(--cor0);
         line-height: 1.1;
         margin: 0 0 18px;
-        padding: 10px 10px;
+        padding: 0 0 0 0;
     }
     .home-txt .btn1 {
         margin: 50px 0 0 0;
@@ -151,9 +162,9 @@ Grandes telas: acima de 1200px
         color: var(--cor0);
         background-color: var(--cor2);
         border: 2px solid rgb(255, 255, 255);
-        margin: 10px 10px 10px 10px;
-        padding: 10px 40px 10px 40px;
-        font-size: 1.5em;
+        margin: 10px 10px 10px 0;
+        padding: 5px 50px 5px 50px;
+        font-size: 1.5rem;
         border-radius: 10px;
         font-weight: 600;
         transition: all .45s ease;
@@ -163,6 +174,7 @@ Grandes telas: acima de 1200px
         border: 2px solid var(--cor5);
         transform: scale(0.9);
     }
+    /*
     .home-txt .icons{
        display: flex;
        margin: 50px 0 0 0;
@@ -183,6 +195,27 @@ Grandes telas: acima de 1200px
     .home-txt .icons a:hover{
         color: var(--cor4);
         transform: scale(1.1) translateY(5px);
+    }
+    */
+
+    .home-img{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    }
+    .home-img img{
+        max-width: 100%;
+        width: 500px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        border: 2px solid var(--cor0);
     }
 
 

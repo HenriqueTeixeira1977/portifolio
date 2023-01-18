@@ -38,7 +38,7 @@ Grandes telas: acima de 1200px
 
 
 /*  VERSION TELAS GRANDES  */
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1367px){
 
 /*----------  HEADER SECTION  ----------*/    
     header{
@@ -48,7 +48,7 @@ Grandes telas: acima de 1200px
         right: 0;
         z-index: 1000;
         display: flex;
-        justify-content: space-betw;
+        justify-content: space-between;
         align-items: center;
         background: transparent;
         padding: 22px 15%;
@@ -93,8 +93,7 @@ Grandes telas: acima de 1200px
         cursor: pointer;
         margin-left: 25;
         display: none;
-    }   
-
+    } 
     header.sticky{
         background-color: var(--cor5);
         border-bottom: 2px solid var(--cor2);
@@ -107,8 +106,12 @@ Grandes telas: acima de 1200px
 /*----------  HOME SECTION  ----------*/    
     main .home {
         display: flex;
-        justify-content: space-around;
-        padding: 160px 15% 120px;
+        justify-content: space-between;
+        padding: 0px 15% 0px;
+
+
+                border: 2px solid greenyellow;    
+
     }
     .home{
         position: relative;
@@ -120,18 +123,19 @@ Grandes telas: acima de 1200px
         /*
         background-image: url(../img/bg1.jpg);
         background-size: cover;
-        background-position: center;*/
+        background-position: center;
+        */
     }
     .home-txt{
         display: block;
-        padding: 10px;
+        padding: 0px;
     }
     .home-txt h1{
         font-size: 5em;
         font-weight: 700;
         color: var(--cor0);
         line-height: 1.1;
-        margin: 0 0 8px;
+        margin: 0 0 0px;
     }
     .home-txt p{
         font-size: 2em;
@@ -139,7 +143,7 @@ Grandes telas: acima de 1200px
         color: var(--cor0);
         line-height: 1.1;
         margin: 0 0 18px;
-        padding: 10px 10px;
+        padding: 0px 0px;
     }
     .home-txt .btn1 {
         margin: 50px 0 0 0;

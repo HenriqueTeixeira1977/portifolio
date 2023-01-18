@@ -18,7 +18,15 @@
     --cor5: #000000;
 
     --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    --fonte-destaque:
+    --fonte-destaque: Arial;
+    
+    --fonte-tam-xxgrande: 5em; 
+    --fonte-tam-xgrande: 3em; 
+    --fonte-tam-grande: 2em; 
+    --fonte-tam-normal: 1em; 
+    --fonte-tam-pequena: .8em; 
+    --fonte-tam-xpequena: .5em; 
+
 }
 html, body {
     background-color: var(--cor5);
@@ -27,16 +35,12 @@ html, body {
     margin: auto;
 }
 
+
 /*  ----------  SESSÃO HEADER  ----------  */
-header{
+/*header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-/*
-    background-color: var(--cor5);
-    color: var(--cor0);
-    border-bottom: 4px solid var(--cor1);
-*/
     position: fixed;
     width: 100vw;
     top: 0;
@@ -47,6 +51,20 @@ header{
     padding: 22px 15%;
     border-bottom: 1px solid transparent;
     transition: all .45s ease;
+}*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 0px 0%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
 }
 header .container{
     display: flex;
@@ -55,12 +73,13 @@ header .container{
     margin: auto;
     width: 100vw;
     height: 70px;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 0px 0px 0px;
+    border: 2px solid red;
 }
 header .container .logo h1{
     color: var(--cor0);
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 100;
     line-height: 20px;
 }
@@ -81,50 +100,42 @@ header .container #burguer {
 }
 header .container #fechar{
     display: none;
-}/*
-nav ul{
-    display: block;
-}*/
-/*
-nav li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    text-align: right;
-    list-style: none; 
-    color: var(--cor0);   
-}*/
+}
 nav li a {
     justify-content: space-between;
     align-items: right;
     color: var(--cor1);
-
     transition: all .45s ease;
 }
 nav li a:hover {
-
     color: var(--cor3);
+}
 
-
+header.sticky{
+    background-color: var(--cor5);
+    border-bottom: 2px solid var(--cor2);
+    padding: 10px 3%;
 }
 
 
 /*  ----------  SESSÃO HOME  ----------  */
-main .home{    
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
+main .home {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 0% 0px;
+
     background-color: var(--cor4);
 
     background-image: url('../img/henrique4.png');  
-    background-size: 40vh;
+    background-size: 30vh;
     background-repeat: no-repeat;
     background-position: right bottom;
+
+    border: 2px solid greenyellow;    
 }
+
+
+
 main .home-txt{
     display: block;
     justify-content: flex-start;
@@ -193,7 +204,7 @@ main .home .icons{
     padding: 0px 0px 0px 0px;
 }
 main .home .icons a{
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 5px 10px 7px 10px;
     margin: 120px 10px;
     background-color: var(--cor2);
