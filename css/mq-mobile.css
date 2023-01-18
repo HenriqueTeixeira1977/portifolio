@@ -45,9 +45,10 @@ Grandes telas: acima de 1200px
 */
 
 /*  VERSION TABLET  */
-@media screen and (min-width: 0px) and (max-width: 720px){
+@media screen and (max-width: 768px){
 
     /*  ----------  SESSÃO HEADER  ----------  */   
+    /*
     header{
         position: fixed;
         width: 100%;
@@ -112,7 +113,53 @@ Grandes telas: acima de 1200px
     nav li a:hover {
         color: var(--cor3);
     }
+    header.sticky{
+        background-color: var(--cor5);
+        border-bottom: 2px solid var(--cor2);
+        padding: 10px 3%;
+    }
+    */
+    header{
+        padding: 18px 3%;
+    }
+    header .container #burguer{
+        display: flex;
+        color: var(--cor0);
+        font-size: 28px;
+        z-index: 10001;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        background: var(--cor5);
+        box-shadow: 0px 15px 30px 0px rgb(0, 0, 0 / 70%);
+        text-align: left;
+        transition: 0.2s ease;
+    }
+    .navbar a{
+        display: block;
+        padding: 1rem;
+        border-left: 2px solid var(--cor2);
+        margin: 1rem;
+        display: block;
+    }
+    .navbar a:hover{
+        background-color: var(--cor1);
+        color: var(--cor0);
+        transition: .3s;
+    }
 
+    .navbar.active{
+        display: block;
+        top: 100%;
+    }
     header.sticky{
         background-color: var(--cor5);
         border-bottom: 2px solid var(--cor2);
@@ -121,14 +168,7 @@ Grandes telas: acima de 1200px
 
     
 /*  ----------  SESSÃO HOME  ----------  */
-/*    main .home{
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        }*/
+
     main .home {
         width: 100vw;
         height: 100vh;
@@ -150,13 +190,13 @@ Grandes telas: acima de 1200px
         width: 100%;
         height: 55%;
         display: block;
-        margin: 50px 10px;
+        margin: 20px 10px;
         padding: 0% 0 0 0 ;    
 
         border: 2px solid red;
     }
     main .home-txt h1{    
-        width: 80%;
+        width: 35%;
         height: 70%;  
         display: block; 
         justify-content: space-between; 
@@ -173,7 +213,7 @@ Grandes telas: acima de 1200px
 
     }
     main .home-txt p{
-        width: 100%;
+        width: 60%;
         height: 30%;
         display: flex;
         justify-content: flex-start;
@@ -211,7 +251,7 @@ Grandes telas: acima de 1200px
     }
     main .home .icons{
         width: 50vw;
-        hi
+    
         display: flex;
         justify-content: center;
         align-items: center;

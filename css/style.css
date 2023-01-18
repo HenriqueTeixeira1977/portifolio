@@ -37,21 +37,6 @@ html, body {
 
 
 /*  ----------  SESSÃO HEADER  ----------  */
-/*header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100vw;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    
-    background: transparent;
-    padding: 22px 15%;
-    border-bottom: 1px solid transparent;
-    transition: all .45s ease;
-}*/
 header{
     position: fixed;
     width: 100%;
