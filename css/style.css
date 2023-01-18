@@ -12,7 +12,7 @@
 :root {
     --cor0: #ffffff;
     --cor1: #BF7F30;
-    --cor2: #C68F2F;
+    --cor2: #ffb73b;
     --cor3: #777777;
     --cor4: #1b1a20;
     --cor5: #000000;
@@ -37,260 +37,63 @@ html, body {
 
 
 /*  ----------  SESSÃO HEADER  ----------  */
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: transparent;
-    padding: 0px 0%;
-    border-bottom: 1px solid transparent;
-    transition: all .45s ease;
-}
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
+header {
     width: 100vw;
     height: 70px;
-    padding: 0px 0px 0px 0px;
-    border: 2px solid red;
-}
-header .container .logo h1{
-    color: var(--cor0);
-    text-align: left;
-    font-size: 1em;
-    font-weight: 100;
-    line-height: 20px;
-}
-header .container i {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header .container #burguer {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-
-    border: 5px solid red;
-}
-header .container #fechar{
-    display: none;
-}
-nav li a {
-    justify-content: space-between;
-    align-items: right;
-    color: var(--cor1);
-    transition: all .45s ease;
-}
-nav li a:hover {
-    color: var(--cor3);
-}
-
-header.sticky{
-    background-color: var(--cor5);
-    border-bottom: 2px solid var(--cor2);
-    padding: 10px 3%;
-}
-
-
-/*  ----------  SESSÃO HOME  ----------  */
-main .home {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 0% 0px;
-
-    background-color: var(--cor4);
-
-    background-image: url('../img/henrique4.png');  
-    background-size: 30vh;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-
-    border: 2px solid greenyellow;    
-}
-
-
-
-main .home-txt{
-    display: block;
-    justify-content: flex-start;
-    align-items: center;
-    width: 95vw;
-    height: 400px;
-    margin: 10px 10px;
-    padding: 50px 0px 0px 0px;
-}
-main .home h1{
-    display: block;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 3em;
-    font-weight: 100;
-    line-height: 60px;
-    color: var(--cor0);
-    width: 60vw;
-    height: 230px;
-    margin-top: 0px;
-    padding: 0px 0px 0px 0px;
-}
-.home span{
-    color: var(--cor1);
-    font-weight: bolder;
-}
-main .home p{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 70vw;
-    height: 100px;
-    color: var(--cor0);
-    padding: 0px 0px 0px 0px;
-    font-size: 1.1em;
-
-
-}
-main #btn1{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 50px 50px 50px;
-    padding: 0px 0px;
-    text-align: center;
-    color: var(--cor0);
-    background-color: var(--cor2);
-    border-radius: 5px;
-    font-size: 2em;
-
-    border: 2px solid var(--cor0);
-}
-main .home #btn1:hover{
-    background-color: var(--cor1);
-}
-main .home-img{
-    display: none;
-}
-main .home .icons{
-    width: 97vw;
-
-    display: flex;
-    justify-content: center;
-    align-items: bottom;
-    margin: auto;
-    padding: 0px 0px 0px 0px;
-}
-main .home .icons a{
-    font-size: 1em;
-    padding: 5px 10px 7px 10px;
-    margin: 120px 10px;
-    background-color: var(--cor2);
-    color: var(--cor0);
-    border-radius: 5px;
-    border: 2px solid var(--cor0)
-
-
-}
-
-/*  ----------  SESSÃO SOBRE  ----------  */
-main .sobre{
-    width: 100vw;
-    height: 350px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--cor5);
-    color: var(--cor0);
-    padding: 30px 30px 30px 30px;
-    margin: auto;
-}
-main .sobre-txt{    
-    height: 250px;
-    margin: auto;
-    padding: 10px 0px 0px 0px;
-}
-main .sobre h2{
-    text-align: center;
-    margin-bottom: 0px;
-}
-main .sobre p{
-    text-align: justify;
-    margin-bottom: 30px;
-}
-main .sobre #btn2{    
-    display: block;
-    width: 200px;
-    color: var(--cor0);
-    background-color: var(--cor2);
-    margin: auto;
-    padding: 3px 10px;
-    border-radius: 5px;
-    font-size: 1.3em;
-    text-align: center;
-    position: relative;
-    top: center;
-}
-
-/*  ----------  SESSÃO SOLUÇÕES  ----------  */
-main .solucoes{
-    width: 100vw;
-    height: 700px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background-color: var(--cor4);
-
-    text-align: center;
-    color: var(--cor0);
-    padding: 30px 10px 10px 10px;
-}
-.cards {
-    margin: 0px;
-    padding: 10px;
-    text-align: justify;
-}
-.card {
-    margin: 10px 0px;
-    padding: 20px 20px;
+    top: 0;
+    padding: 0 2%;
     background-color: #000000;
-    border-radius: 10px;
+    border: rgb(255, 0, 0) solid 2px;
+}
+header section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: #abc90065;
 }
 
-  
 
 
-/*  ----------  SESSÃO FOOTER  ----------  */
-footer{
-    width: 100vw;
-    display: block;
+
+.logo h1{
+    font-size: var(--fonte-tam-normal);
+    font-weight: 100;
+    line-height: 15px;
+    color: var(--cor0);
+
+    border:red solid 1px
+}
+.logo span{
+    color: var(--cor2);
+}
+
+
+
+
+#menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background: #000000ab;
+    height: 100vh;
+    z-index: 1000;
+}
+
+#btn-mobile{
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    margin: auto;
-    text-align: center;
-    font-size: .8em;    
-    background-color: var(--cor5);
-    border-top: 2px solid var(--cor1);
-    color: var(--cor0);
+    width: 30px;
+    height: 30px;
+    font-size: 15px;    
 }
-footer .icons {
-    padding: 10px 0px 10px 0px;
+#nav.active #menu{
+    display: block
 }
-footer .icons a{
-    color: var(--cor0);
-    font-size: 2em;
-    margin: 0px;
-    padding: 15px 10px;
-}
-footer .footer-txt{
-    padding: 10px 0px 30px 0px;
+#menu a{
+    display: block;
+    padding: 5px;
 }
