@@ -22,7 +22,7 @@
     
     --fonte-tam-xxgrande: 5em; 
     --fonte-tam-xgrande: 3em; 
-    --fonte-tam-grande: 2em; 
+    --fonte-tam-grande: 1.2em; 
     --fonte-tam-normal: 1em; 
     --fonte-tam-pequena: .8em; 
     --fonte-tam-xpequena: .5em; 
@@ -37,63 +37,75 @@ html, body {
 
 
 /*  ----------  SESSÃO HEADER  ----------  */
-header {
-    width: 100vw;
-    height: 70px;
-    top: 0;
-    padding: 0 2%;
-    background-color: #000000;
-    border: rgb(255, 0, 0) solid 2px;
-}
-header section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    background-color: #abc90065;
-}
 
+@media screen and (max-width: 600px){
+    
 
+    header {
+        width: 100vw;
+        height: 70px;
+        top: 0;
+        padding: 0 2%;
+        background-color: #000000;
+        border: rgb(255, 0, 0) solid 2px;
+    }
+    header section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        background-color: #abc90065;
+    }
 
+    .logo h1{
+        font-size: var(--fonte-tam-normal);
+        font-weight: 100;
+        line-height: 15px;
+        color: var(--cor0);
+        border:red solid 1px
+    }
+    .logo span{
+        color: var(--cor2);
+    }
+    #menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background: #000000c1;
+        height: 39vh;
+        z-index: 1000;
+        border: #3b45ff solid 2px;
+    }
 
-.logo h1{
-    font-size: var(--fonte-tam-normal);
-    font-weight: 100;
-    line-height: 15px;
-    color: var(--cor0);
+    #btn-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        font-size: var(--fonte-tam-grande);    
+        background-color: #000000;
+        color: var(--cor2);
+        border: none;
+    }
+    #nav.active #menu{
+        display: block
+    }
+    #menu a{
+        display: block;
+        padding: 1rem 1px;
+        margin: 0 1rem;
+        
+        border-bottom: var(--cor2) solid 2px;    
+    }
+    #menu a:hover{
+        background-color: var(--cor2);
+        color: var(--cor5);
+        font-size: var(--fonte-tam-normal);
+        font-weight: 700;
+        transition: all .3s ease;
 
-    border:red solid 1px
-}
-.logo span{
-    color: var(--cor2);
-}
-
-
-
-
-#menu{
-    display: none;
-    position: absolute;
-    width: 100%;
-    top: 70px;
-    right: 0;
-    background: #000000ab;
-    height: 100vh;
-    z-index: 1000;
-}
-
-#btn-mobile{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    font-size: 15px;    
-}
-#nav.active #menu{
-    display: block
-}
-#menu a{
-    display: block;
-    padding: 5px;
+    }
 }
