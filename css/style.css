@@ -21,7 +21,7 @@
     --fonte-destaque: Arial;
     
     --fonte-tam-xxgrande: 5em; 
-    --fonte-tam-xgrande: 3em; 
+    --fonte-tam-xgrande: 2em; 
     --fonte-tam-grande: 1.2em; 
     --fonte-tam-normal: 1em; 
     --fonte-tam-pequena: .8em; 
@@ -38,14 +38,13 @@ html, body {
 
 /*  ----------  SESSÃO HEADER  ----------  */
 
-@media screen and (max-width: 600px){
-    
+@media screen and (max-width: 768px){    
 
     header {
         width: 100vw;
         height: 70px;
         top: 0;
-        padding: 0 2%;
+        padding: 0 3%;
         background-color: #000000;
     }
     header section{
@@ -82,14 +81,14 @@ html, body {
         visibility: hidden;
         overflow-y: hidden;
     }
-
     #btn-mobile{
         display: flex;
         justify-content: center;
         align-items: center;
         width: 30px;
         height: 30px;
-        font-size: var(--fonte-tam-grande);    
+        font-size: var(--fonte-tam-xgrande);   
+        font-weight: 700; 
         background-color: #000000;
         color: var(--cor2);
         border: none;
