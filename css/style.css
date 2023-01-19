@@ -47,14 +47,17 @@ html, body {
         top: 0;
         padding: 0 2%;
         background-color: #000000;
-        border: rgb(255, 0, 0) solid 2px;
     }
     header section{
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
-        background-color: #abc90065;
+    }
+    header.sticky{
+        background-color: var(--cor5);
+        border-bottom: 2px solid var(--cor2);
+        padding: 10px 3%;
     }
 
     .logo h1{
@@ -62,21 +65,22 @@ html, body {
         font-weight: 100;
         line-height: 15px;
         color: var(--cor0);
-        border:red solid 1px
     }
     .logo span{
         color: var(--cor2);
     }
     #menu{
-        display: none;
+        display: block;
         position: absolute;
         width: 100%;
         top: 70px;
         right: 0;
         background: #000000;
-        height: 39vh;
+        height: 0px;
+        transition: .6s;
         z-index: 1000;
-        border: #3b45ff solid 2px;
+        visibility: hidden;
+        overflow-y: hidden;
     }
 
     #btn-mobile{
@@ -91,15 +95,16 @@ html, body {
         border: none;
     }
     #nav.active #menu{
-        display: block
+        height: 40%;
+        visibility: visible;
+        overflow-y: auto;
     }
     #menu a{
         display: block;
         padding: 1rem 1px;
         margin: 0 1rem;
-        color: var(--cor2);
-        
-        border-bottom: var(--cor2) solid 2px;    
+        color: var(--cor2);        
+        border-bottom: var(--cor2) solid 1px;    
     }
     #menu a:hover{
         background-color: var(--cor2);
@@ -109,9 +114,5 @@ html, body {
         transition: all .3s ease;
 
     }
-    header.sticky{
-        background-color: var(--cor5);
-        border-bottom: 2px solid var(--cor2);
-        padding: 10px 3%;
-    }
+
 }
