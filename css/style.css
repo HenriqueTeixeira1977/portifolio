@@ -73,7 +73,7 @@ html, body {
         width: 100%;
         top: 70px;
         right: 0;
-        background: #000000c1;
+        background: #000000;
         height: 39vh;
         z-index: 1000;
         border: #3b45ff solid 2px;
@@ -97,6 +97,7 @@ html, body {
         display: block;
         padding: 1rem 1px;
         margin: 0 1rem;
+        color: var(--cor2);
         
         border-bottom: var(--cor2) solid 2px;    
     }
@@ -107,5 +108,10 @@ html, body {
         font-weight: 700;
         transition: all .3s ease;
 
+    }
+    header.sticky{
+        background-color: var(--cor5);
+        border-bottom: 2px solid var(--cor2);
+        padding: 10px 3%;
     }
 }
