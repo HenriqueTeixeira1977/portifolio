@@ -37,6 +37,7 @@ html, body {
 
 h2, h3{
     color: var(--cor2);
+    font-weight: 200;
 }
 p{
     color: var(--cor0);
@@ -63,7 +64,6 @@ p{
     .logo span{
         color: var(--cor2);
     }
-
     nav{
         height: 75px;
         width: 100%;
@@ -85,7 +85,7 @@ p{
         float: left;
         text-align: center;
         transition: all .5s;
-        box-shadow: var(--cor5) -30px 0px 50px 0px;
+        box-shadow: var(--cor2) -5px 5px 10px -5px;
 
     }
     .nav-list li{
@@ -203,25 +203,48 @@ p{
         align-items: center;
         margin: 75px 0 0 0;
         padding: 20px 20px;
+
+        border: #000000 solid 2px;
+/*
+        background: url(../img/henrique-circle.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+*/
     }
-    main .sobre .sobre-txt {
+    .sobre .img-henrique{
+        padding: 30px;
+    }
+    .sobre .sobre-txt {
         margin-top: 75px;
         text-align: center;
     }
-    main .sobre .sobre-txt h2 {
-        color: var(--cor2);
+    .sobre .sobre-txt h2 {
+        margin: 0px 0;
+    }
+    .sobre .sobre-txt h3 {
         margin: 10px 0;
     }
-    main .sobre .sobre-txt p {
+    .sobre .sobre-txt p {
         color: var(--cor0);
         text-align: justify;
         margin: 0 0 20px 0;
-    }
-    main .sobre .btn2 a{
+    }    
+    .sobre .btn2 button{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 50vw;
+        height:40px;
+        margin: auto;
+        padding: 0px;
+        margin-top: 50px;
+        background-color: var(--cor2);
+        border: var(--cor0) solid 1px;
     }
+
+
     /*  ----------  SECTION SOBRE  ----------  */
     main .solucoes{
         width: 100vw;
@@ -231,7 +254,26 @@ p{
         align-items: center;
         margin: 0px 0 0 0;
         padding: 75px 20px;
+        text-align: center;
         border: #000000 solid 2px;
+    }
+    main .solucoes .cards {
+        padding: 20px 0px 20px 0px;
+        text-align: justify;
+    }
+    .card{
+        display: block;
+        text-align: center;
+        padding: 25px 15px;
+        margin: 15px 0;
+        background-color: var(--cor5);
+        border-radius: 20px;
+    }
+    .card img {
+        width: 12%;
+    }
+    .card p {
+        text-align: justify;
     }
     /*  ----------  SECTION ESPECIALIDADES  ----------  */
     main .especialidades{
@@ -244,6 +286,7 @@ p{
         padding: 75px 20px;
         border: #000000 solid 2px;
     }
+
     /*  ----------  SECTION PORTIFOLIO  ----------  */
     main .portifolio{
         width: 100vw;
@@ -255,6 +298,7 @@ p{
         padding: 75px 20px;
         border: #000000 solid 2px;
     }
+
     /*  ----------  SECTION CONTATOS  ----------  */
     main .contatos{
         width: 100vw;
@@ -266,6 +310,7 @@ p{
         padding: 75px 20px;
         border: #000000 solid 2px;
     }
+
         /*  ----------  SECTION FOOTER  ----------  */
     footer{
         width: 100vw;
