@@ -24,17 +24,18 @@
 
 </head>
 <body>
+<!--    
     
     <header class="sticky" id="topo">
         <section class="container">
-
             <div class="logo" id="logo">
                 <a href="#home"><h1>Henrique Teixeira <br> <span>WebDeveloper</span></h1></a>
             </div>
-            
+        -->
+  <!--      
             <nav id="nav" class="nav">
 
-                <button id="btn-mobile"><i class="fa-solid fa-bars"></i></button>
+                <button id="btn-mobile"><i class="fa-solid fa-bars" onclick="clickMenu"></i></button>
 
                 <ul class="menu" id="menu">
                     <li><a href="#home" class="ativo">Home</a></li>
@@ -45,15 +46,59 @@
                     <li><a href="#contatos">Contatos</a></li>
                 </ul>
             </nav>
+-->
+<!-- ******************** Curso em Video  *********************  -->          
+<!--
+            <button><i id="burguer" class="fa-solid fa-bars" onclick="clickMenu()"></i></button>
+            <menu id="itens" class="itens">
+                <ul class="menu" id="menu">
+                    <li><a href="#home" class="ativo">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#portifolio">Portifólio</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nenu>
+        -->
+
+
+
+
+
 <!--
             <i class="fa-solid fa-bars" id="burguer"></i>
             <i class="fa-solid fa-xmark" id="fechar"></i>
 -->
+<!--
         </section>
     </header>
-
+-->
+<!-- ******************** CodeBlocks  *********************  -->    
+    <header class="header" id="header">
+        <nav id="itens" class="itens">
+            <div class="logo" id="logo">        
+                <a href="#header"><h1>Henrique Teixeira <br> <span>WebDeveloper</span></h1></a>
+            </div>
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="hamburguer-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#header" class="ativo">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#solucoes">Soluções</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="home" id="home">
+            <div class="home-img">
+                <img src="img/imagem-home.png" width="100" alt="">
+            </div>
             <div class="home-txt">
                 <h1>
                     <span>Criando</span>
@@ -61,27 +106,24 @@
                     <span>Resultados</span>
                 </h1> 
                 <p>Construo Websites Profissionais personalizados e Otimizados para todos dispositivos.</p>
-                <div class="btn1">
+                <button class="btn1">
                     <a href="https://bit.ly/HenriqueTeixeiraWebDeveloperFrontEnd" target="_blank" rel="externo">Saiba Mais</a>
-                </div>
+                </button>
             
                 <div class="icons">
-                    <a href="https://github.com/HenriqueTeixeira1977" target="_blank" rel="externo" ><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/henriqueteixeiraoficial" target="_blank" rel="externo" ><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://bit.ly/HenriqueTeixeiraWebDeveloperFrontEnd" target="_blank" rel="externo" ><i class="fa-brands fa-whatsapp"></i></a>
-                <!--   
-                    <a href="https://www.instagram.com/htwebsitesbuil" target="_blank" rel="externo" ><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://br.pinterest.com/henriqueteixeiramd" target="_blank" rel="externo" ><i class="fa-brands fa-pinterest"></i></a>
-                    <a href="https://www.facebook.com/htwebsitesbuilder" target="_blank" rel="externo" ><i class="fa-brands fa-facebook"></i></a>            
-                -->
-                </div>
-                       
+                    <button>
+                        <a href="https://github.com/HenriqueTeixeira1977" target="_blank" rel="externo" ><i class="fa-brands fa-github"></i></a>
+                    </button>
+                    <button>
+                        <a href="https://www.linkedin.com/in/henriqueteixeiraoficial" target="_blank" rel="externo" ><i class="fa-brands fa-linkedin"></i></a>
+                    </button>
+                    <button>
+                        <a href="https://bit.ly/HenriqueTeixeiraWebDeveloperFrontEnd" target="_blank" rel="externo" ><i class="fa-brands fa-whatsapp"></i></a>
+                    </button>
+                </div>                       
             </div>
-            <div class="home-img">
-                <img src="img/imagem-home.png" width="100" alt="">
-            </div>
-        </section>  
-        
+
+        </section>        
         <section class="sobre" id="sobre">
             <div class="sobre-txt" id="sobre-txt">
                 <h2>Sobre Mim</h2>
@@ -92,8 +134,7 @@
                 </p>                
             </div>  
             <a href="https://bit.ly/HenriqueTeixeiraWebDeveloperFrontEnd" id="btn2">Saiba Mais</a>         
-        </section> 
-
+        </section>
         <section class="solucoes" id="solucoes">
             <h2>SOLUCÕES</h2>
             <div class="cards">
@@ -117,15 +158,12 @@
                 </div>
             </div>
         </section>
-
         <section class="especialidades" id="especialidades">
             <h2>Especialidades</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nisi aut nam atque ea modi fugit. Cumque unde earum aliquam ipsa hic? Est facere molestias odit ex quis ducimus culpa.
             </p>
         </section>
-
-
         <section class="portifolio" id="portifolio">
             <h2>PORTIFOLIO</h2>
             <div class="cards">
@@ -149,7 +187,6 @@
                 </div>
             </div>
         </section>
-
         <section class="contatos" id="contatos">
             <h2>CONTATOS</h2>
             <p>
