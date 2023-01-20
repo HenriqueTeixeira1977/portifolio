@@ -85,6 +85,8 @@ p{
         float: left;
         text-align: center;
         transition: all .5s;
+        box-shadow: var(--cor5) -30px 0px 50px 0px;
+
     }
     .nav-list li{
         opacity: 0; 
