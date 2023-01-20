@@ -35,11 +35,16 @@ html, body {
     margin: auto;
 }
 
+h2, h3{
+    color: var(--cor2);
+}
+p{
+    color: var(--cor0);
+}
 
-/*  ----------  SESSÃO HEADER  ----------  */
 
-@media screen and (max-width: 768px){    
-/* ******************** CodeBlocks  *********************  */    
+@media screen and (max-width: 768px) {    
+    /*  ----------  SESSÃO HEADER  ----------  */
     header{
         padding-top: 15px;
     }
@@ -58,6 +63,7 @@ html, body {
     .logo span{
         color: var(--cor2);
     }
+
     nav{
         height: 75px;
         width: 100%;
@@ -84,9 +90,9 @@ html, body {
         opacity: 0; 
         line-height: 30px;
         margin: 0px 0px;
-        padding: 20px 19% 0 0;
+        padding: 50px 19% 0 0;
         text-align: right;
-        border-bottom: var(--cor2) solid 2px;
+        border-bottom: var(--cor2) solid 0px;
         transition: all .5s;
         
     }
@@ -111,7 +117,7 @@ html, body {
         display: none;
     }
     #check:checked ~ .nav-list {
-        height: 370px;
+        height: 100VH;
     }
     #check:checked ~ .nav-list li{
         opacity: 1;
@@ -120,7 +126,7 @@ html, body {
     main {
         margin-top: 75px;
         margin: auto ;
-        padding: 0 5%;
+        padding: 0 0%;
     }
     main .home{
         display: block;
@@ -185,8 +191,107 @@ html, body {
     main .icons buttom a i{
         font-size: var(--fonte-tam-xgrande);
     }
-/*  ----------  SECTION SOBRE  ----------  */
+    /*  ----------  SECTION SOBRE  ----------  */
 
+    main .sobre{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        justify-content: ;
+        align-items: center;
+        margin: 75px 0 0 0;
+        padding: 20px 20px;
+    }
+    main .sobre .sobre-txt {
+        margin-top: 75px;
+        text-align: center;
+    }
+    main .sobre .sobre-txt h2 {
+        color: var(--cor2);
+        margin: 10px 0;
+    }
+    main .sobre .sobre-txt p {
+        color: var(--cor0);
+        text-align: justify;
+        margin: 0 0 20px 0;
+    }
+    main .sobre .btn2 a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+    }
+    /*  ----------  SECTION SOBRE  ----------  */
+    main .solucoes{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        justify-content: ;
+        align-items: center;
+        margin: 0px 0 0 0;
+        padding: 75px 20px;
+        border: #000000 solid 2px;
+    }
+    /*  ----------  SECTION ESPECIALIDADES  ----------  */
+    main .especialidades{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        justify-content: ;
+        align-items: center;
+        margin: 0px 0 0 0;
+        padding: 75px 20px;
+        border: #000000 solid 2px;
+    }
+    /*  ----------  SECTION PORTIFOLIO  ----------  */
+    main .portifolio{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        justify-content: ;
+        align-items: center;
+        margin: 0px 0 0 0;
+        padding: 75px 20px;
+        border: #000000 solid 2px;
+    }
+    /*  ----------  SECTION CONTATOS  ----------  */
+    main .contatos{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0 0 0;
+        padding: 75px 20px;
+        border: #000000 solid 2px;
+    }
+        /*  ----------  SECTION FOOTER  ----------  */
+    footer{
+        width: 100vw;
+        height: 70vh;
+
+        display: block;
+        justify-content: center ;
+        align-items: center;
+        margin: 0px 0 0 0;
+        padding: 75px 0px;
+        background-color: var(--cor5);
+        color: var(--cor0);
+        border: #ff0000 solid 2px;text-align: center;
+    }
+    footer .icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 50px;
+    }
+    footer .icons a{
+        font-size: var(--fonte-tam-xgrande);
+        color: var(--cor0);
+    }
+    footer .icons .footer-txt{
+        font-size: var(--fonte-tam-xpequena);
+    }
     
 }
