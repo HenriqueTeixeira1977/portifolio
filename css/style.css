@@ -290,8 +290,8 @@ p{
         font-size: var(--fonte-tam-xgrande);
         color: var(--cor0);
     }
-    footer .icons .footer-txt{
-        font-size: var(--fonte-tam-xpequena);
+    footer .footer-txt p{
+        font-size: var(--fonte-tam-pequena);
     }
     
 }
