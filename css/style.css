@@ -197,7 +197,7 @@ p{
         width: 100vw;
         height: 100vh;
         display: block;
-        justify-content: ;
+        justify-content: center;
         align-items: center;
         margin: 75px 0 0 0;
         padding: 20px 20px;
@@ -219,14 +219,13 @@ p{
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
     /*  ----------  SECTION SOBRE  ----------  */
     main .solucoes{
         width: 100vw;
         height: 100vh;
         display: block;
-        justify-content: ;
+        justify-content: center;
         align-items: center;
         margin: 0px 0 0 0;
         padding: 75px 20px;
@@ -237,7 +236,7 @@ p{
         width: 100vw;
         height: 100vh;
         display: block;
-        justify-content: ;
+        justify-content: center;
         align-items: center;
         margin: 0px 0 0 0;
         padding: 75px 20px;
@@ -248,7 +247,7 @@ p{
         width: 100vw;
         height: 100vh;
         display: block;
-        justify-content: ;
+        justify-content: center;
         align-items: center;
         margin: 0px 0 0 0;
         padding: 75px 20px;
@@ -268,29 +267,28 @@ p{
         /*  ----------  SECTION FOOTER  ----------  */
     footer{
         width: 100vw;
-        height: 70vh;
-
+        height: 30vh;
         display: block;
-        justify-content: center ;
+        justify-content: center;
         align-items: center;
         margin: 0px 0 0 0;
         padding: 75px 0px;
         background-color: var(--cor5);
         color: var(--cor0);
-        border: #ff0000 solid 2px;text-align: center;
     }
     footer .icons{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0px;
-        padding: 50px;
+        padding: 10px 50px;
     }
     footer .icons a{
         font-size: var(--fonte-tam-xgrande);
         color: var(--cor0);
     }
     footer .footer-txt p{
+        text-align: center;
         font-size: var(--fonte-tam-pequena);
     }
     
