@@ -45,7 +45,7 @@ p{
 
 
 @media screen and (max-width: 768px) {    
-    /*  ----------  SESSÃO HEADER  ----------  */
+/*  ----------  SESSÃO HEADER  ----------  */
     header{
         padding-top: 15px;
     }
@@ -74,6 +74,7 @@ p{
         padding: 5%;
         position: fixed;
         background-color: var(--cor5);
+        z-index: 1000;
     }
     .nav-list{
         position: fixed;
@@ -82,7 +83,6 @@ p{
         top: 75px;
         margin: 0 0 0 50% ;
         background-color: var(--cor5);
-        float: left;
         text-align: center;
         transition: all .5s;
         box-shadow: var(--cor2) -5px 5px 10px -5px;
@@ -124,7 +124,18 @@ p{
     #check:checked ~ .nav-list li{
         opacity: 1;
     }
-    /*  *************  SECTION HOME  ****************  */
+    header .aviso{
+        margin-top: 60px;
+        background: red;
+        width: 100vw;
+        text-align: center;
+        font-size: var(--fonte-tam-pequena);
+        font-weight: 700;
+        text-transform: uppercase;
+        text-shadow: #000000 10px 10px 10px;
+
+    }
+/*  *************  SECTION HOME  ****************  */
     main {
         margin-top: 75px;
         margin: auto ;
@@ -193,7 +204,7 @@ p{
     main .icons buttom a i{
         font-size: var(--fonte-tam-xgrande);
     }
-    /*  ----------  SECTION SOBRE  ----------  */
+/*  ----------  SECTION SOBRE  ----------  */
 
     main .sobre{
         width: 100vw;
@@ -203,15 +214,6 @@ p{
         align-items: center;
         margin: 75px 0 0 0;
         padding: 20px 20px;
-
-        border: #000000 solid 2px;
-/*
-        background: url(../img/henrique-circle.png);
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-*/
     }
     .sobre .img-henrique{
         padding: 30px;
@@ -245,7 +247,7 @@ p{
     }
 
 
-    /*  ----------  SECTION SOBRE  ----------  */
+/*  ----------  SECTION SOBRE  ----------  */
     main .solucoes{
         width: 100vw;
         height: 100vh;
@@ -255,7 +257,6 @@ p{
         margin: 0px 0 0 0;
         padding: 75px 20px;
         text-align: center;
-        border: #000000 solid 2px;
     }
     main .solucoes .cards {
         padding: 20px 0px 20px 0px;
@@ -267,7 +268,9 @@ p{
         padding: 25px 15px;
         margin: 15px 0;
         background-color: var(--cor5);
-        border-radius: 20px;
+        border-radius: 15px;
+        transition: all .3s ease;
+
     }
     .card img {
         width: 12%;
@@ -275,8 +278,17 @@ p{
     .card p {
         text-align: justify;
     }
-    /*  ----------  SECTION ESPECIALIDADES  ----------  */
-    main .especialidades{
+    .card:hover{
+        transition: all .3s ease;
+        border: #ffb73b;
+        background-color: #777777;
+
+    }
+
+
+     
+/*  ----------  SECTION ESPECIALIDADES  ----------  */
+    main .skills{
         width: 100vw;
         height: 100vh;
         display: block;
@@ -284,10 +296,80 @@ p{
         align-items: center;
         margin: 0px 0 0 0;
         padding: 75px 20px;
-        border: #000000 solid 2px;
     }
-
-    /*  ----------  SECTION PORTIFOLIO  ----------  */
+    main .skills h2{
+        text-align: center;
+    }
+    main .skills .skills-left{
+        margin: 20px 0;
+        font-size: var(--fonte-tam-normal);
+        margin-bottom: 0px;
+    }
+    main .skills .skills-left P{
+        text-align: justify;
+    }
+    main .skills .skills-left a {
+        display: inline-block;
+        background: var(--cor2);
+        color: var(--cor5);
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px 30px;
+        margin: 15px 0 50px 0;
+        border-radius: 6px;
+        border: var(--cor0) solid 1px;
+        transition: all .3s ease;
+    }
+    main .skills .skills-left a:hover{
+        background : none;
+        color: var(--cor0);
+    }
+    main .skills .skills-right .bars{
+        margin-bottom: 10px;
+    }
+    main .skills .skills-right .info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    main .skills .skills-right span{
+        font-weight: 500;
+        font-size: var(--fonte-tam-normal);
+        color: var(--cor0);
+    }
+    main .skills .skills-right .line{
+        width: 100%;
+        height: 3px;
+        background: var(--cor3);
+        position: relative;
+    }
+    main .skills .skills-right .line::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: var(--cor2);
+    }
+    main .skills .skills-right .html::before{
+        width: 83%;
+    }
+    main .skills .skills-right .css::before{
+        width: 77%;
+    }
+    main .skills .skills-right .js::before{
+        width: 31%;
+    }
+    main .skills .skills-right .php::before{
+        width: 36%;
+    }
+    main .skills .skills-right .mysql::before{
+        width: 29%;
+    }
+    main .skills .tecnologias{
+        margin-top: 50px;
+    }
+/*  ----------  SECTION PORTIFOLIO  ----------  */
     main .portifolio{
         width: 100vw;
         height: 100vh;
@@ -296,10 +378,9 @@ p{
         align-items: center;
         margin: 0px 0 0 0;
         padding: 75px 20px;
-        border: #000000 solid 2px;
+        /*border: #000000 solid 2px;*/
     }
-
-    /*  ----------  SECTION CONTATOS  ----------  */
+/*  ----------  SECTION CONTATOS  ----------  */
     main .contatos{
         width: 100vw;
         height: 100vh;
@@ -308,10 +389,9 @@ p{
         align-items: center;
         margin: 0px 0 0 0;
         padding: 75px 20px;
-        border: #000000 solid 2px;
+        /*border: #000000 solid 2px;*/
     }
-
-        /*  ----------  SECTION FOOTER  ----------  */
+/*  ----------  SECTION FOOTER  ----------  */
     footer{
         width: 100vw;
         height: 30vh;
