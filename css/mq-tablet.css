@@ -48,9 +48,10 @@ h2, h3{
 p{
     color: var(--cor0);
 }
-img {
+img{
     width: 10%;
 }
+
 
 /* Typical Device Breakpoints
 ------------------------------
@@ -90,7 +91,6 @@ Grandes telas: acima de 1200px
     header .logo span {
         color: var(--cor2);
     }
-
     header nav .nav-list {
         display: flex;
         justify-content: space-between;
@@ -105,29 +105,91 @@ Grandes telas: acima de 1200px
         transition: all .3s ease;
     }
     header nav .nav-list a:hover{
-        color: var(--cor0);
-
+        color: var(--cor0);    
     }
-
-
     header input, label{
         display: none;
-    }
-    
+    }    
     header .aviso{
         background: red;
         text-align: center;
         text-transform: uppercase;
         font-weight: 700;
     }
+
+
     main{
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        padding: 20px 0px 0px 0px;
+
         border: yellowgreen solid 2px;
     }
     main .home{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-top: 75px;
+        margin: 150px 10%;
+
+
+
+
         border: red solid 2px;
     }
+    main .home-txt{
+
+
+        border:rgb(255, 225, 0) solid 2px
+    }
+    main .home-txt h1{
+        margin: 0px 0px 0px 0px;
+        padding: 10px;
+        font-size: var(--fonte-tam-xxgrande);
+        font-weight: 700;
+        line-height: 40px;
+        color: var(--cor0);
+        border: red solid 1px;
+    }
+    main .home-txt span{
+        color: var(--cor2);
+    }
+    main .home-txt p{
+        margin: 0px 0 0px 0px;
+        padding: 10px 10px;
+        font-size: var(--fonte-tam-normal);
+        font-weight: 200;
+        line-height: 20px;
+
+
+        border: red solid 1px;
+    }
+    main .home .btn1{
+        margin: 10px 0 10px 10px;
+        padding: 10px 40px;
+        color: var(--cor5);
+        background-color: var(--cor2);
+        border-radius: 5px;
+        border: var(--cor0) solid 1px;
+    }
+    main .home .icons{
+        margin: 0 10px;
+        border: red solid 1px;
+    }
+    main .home-img{ 
+        border:rgb(0, 85, 255) solid 2px
+    }
+
+
+
     main .sobre{
+
         border: rgb(217, 255, 0) solid 2px;
+    }
+    main .sobre .img-henrique{
+        width: 50%;
     }
     main .solucoes{
         border: rgb(51, 255, 0) solid 2px;
@@ -141,6 +203,8 @@ Grandes telas: acima de 1200px
     main .contatos{
         border: rgb(255, 0, 166) solid 2px;
     }
+
+
     footer{
         border: red solid 2px;
     }
