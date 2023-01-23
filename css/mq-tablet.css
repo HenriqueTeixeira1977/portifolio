@@ -120,13 +120,13 @@ Grandes telas: acima de 1200px
         margin: auto;
         padding: 20px 0px 0px 0px;
     }
-    main .home{
+    main .home{ 
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: row-reverse;
         width: 100vw;
-        height: 700px;
+        height: 600px;
         margin-top: 75px;
         margin: auto;
         padding: 50px;
@@ -165,7 +165,7 @@ Grandes telas: acima de 1200px
         font-size: var(--fonte-tam-grande);
     }
     main .home .icons {
-        width: 50%;
+        width: 70%;
         margin: 0px 10px 0px;
         padding: 0px 0px;  
         color: #ff0000;
@@ -194,21 +194,21 @@ Grandes telas: acima de 1200px
 
 
 
-    main .sobre{
+    main .sobre{ 
         width: 100%;
-        height: 500px;
-        margin: auto;
+        height: 600px;
+        margin-top: 0px;
         padding: 20px;
         display: block;
         justify-content: space-around;
         align-items: center;
         text-align: center;
-        border: rgb(217, 255, 0) solid 2px;
     }
-    main .sobre-txt .titulo{
+    main .sobre .titulo { 
+        margin: 90px 0 0 0;
         text-align: center;
     }
-    main .sobre-txt{ border: red solid 2px;
+    main .sobre-txt{ 
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -216,10 +216,9 @@ Grandes telas: acima de 1200px
     }
     main .sobre .img-henrique{
         width: 200%;
-        border: red solid 2px;    
     }
 
-    main .sobre-txt-right{ border:rgb(51, 255, 0) solid 2px;
+    main .sobre-txt-right{
         height: 100%;
         margin: 0px;
         padding: 20px 20px;
@@ -233,6 +232,11 @@ Grandes telas: acima de 1200px
         border-radius: 5px;
         border: var(--cor0) solid 1px;
     }
+    main .btn2 button a{
+        color: var(--cor5);
+        font-size: var(--fonte-tam-xgrande);
+    }
+
 
 
 
