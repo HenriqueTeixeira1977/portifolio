@@ -190,8 +190,7 @@ p{
     }
     main button a {
         color: var(--cor5);
-        font-size: var(--fonte-tam-xgrande);
-        font-weight: bolder;
+        font-size: var(--fonte-tam-grande);
     }
     main .icons button {
         display: inline-block;
@@ -204,13 +203,13 @@ p{
         border-radius: 50%;
         box-shadow: #ffee0231 0px 5px 5px;
     }
-    main .icons buttom a i{
-        font-size: var(--fonte-tam-xgrande);
+    main .icons button a i{
+        font-size: var(--fonte-tam-normal);
     }
 
 /*  ----------  SECTION SOBRE  ----------  */
 
-    main .sobre{ border: red solid 1px;
+    main .sobre{
         width: 100vw;
         height: 100vh;
         display: block;
@@ -220,12 +219,14 @@ p{
         padding: 0px 20px;
         text-align: center;
     }
-    main .sobre .titulo { border: red solid 1px;
+    main .sobre .titulo {
         margin: 90px 0 0 0;
         text-align: center;
     }
     .sobre .img-henrique{
         padding: 0px;
+        margin-bottom: 20px;
+
     }
     .sobre .sobre-txt {
         margin-top: 20px;
@@ -243,16 +244,13 @@ p{
         margin: 0 0 20px 0;
     }    
     .sobre .btn2 button{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50vw;
-        height:40px;
-        margin: auto;
-        padding: 0px;
-        margin-top: 50px;
+        width: 200px;
+        height: 40px;
+        margin: 0px 0 20px 0;
         background-color: var(--cor2);
-        border: var(--cor0) solid 1px;
+        color: var(--cor5);
+        border: var(--cor0) solid 2px;
+        border-radius: 10px;
     }
 
 
