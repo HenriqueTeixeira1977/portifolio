@@ -82,10 +82,10 @@ p{
         height: 0vh;
         top: 75px;
         margin: 0 0 0 50% ;
-        background-color: var(--cor5);
+        background-color: #00000096;
         text-align: center;
         transition: all .5s;
-        box-shadow: var(--cor2) -5px 5px 10px -5px;
+        box-shadow: #ffb73b7c -5px 5px 10px -5px;
 
     }
     .nav-list li{
@@ -212,8 +212,12 @@ p{
         display: block;
         justify-content: center;
         align-items: center;
-        margin: 75px 0 0 0;
+        margin: 0px 0 0 0;
         padding: 20px 20px;
+        text-align: center;
+    }
+    main .sobre .titulo { 
+        margin: 90px 0 0 0;
         text-align: center;
     }
     .sobre .img-henrique{
