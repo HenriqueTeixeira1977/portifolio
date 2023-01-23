@@ -44,6 +44,7 @@ p{
 }
 
 
+
 @media screen and (max-width: 767px) {    
 /*  ----------  SESSÃO HEADER  ----------  */
     header{
@@ -135,6 +136,8 @@ p{
         text-shadow: #000000 10px 10px 10px;
 
     }
+
+
 /*  *************  SECTION HOME  ****************  */
     main {
         margin-top: 75px;
@@ -204,27 +207,28 @@ p{
     main .icons buttom a i{
         font-size: var(--fonte-tam-xgrande);
     }
+
 /*  ----------  SECTION SOBRE  ----------  */
 
-    main .sobre{
+    main .sobre{ border: red solid 1px;
         width: 100vw;
         height: 100vh;
         display: block;
         justify-content: center;
         align-items: center;
         margin: 0px 0 0 0;
-        padding: 20px 20px;
+        padding: 0px 20px;
         text-align: center;
     }
-    main .sobre .titulo { 
+    main .sobre .titulo { border: red solid 1px;
         margin: 90px 0 0 0;
         text-align: center;
     }
     .sobre .img-henrique{
-        padding: 30px;
+        padding: 0px;
     }
     .sobre .sobre-txt {
-        margin-top: 75px;
+        margin-top: 20px;
         text-align: center;
     }
     .sobre .sobre-txt h2 {
@@ -252,7 +256,7 @@ p{
     }
 
 
-/*  ----------  SECTION SOBRE  ----------  */
+/*  ----------  SECTION SOLUÇÕES  ----------  */
     main .solucoes{
         width: 100vw;
         height: 100vh;

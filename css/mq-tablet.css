@@ -8,7 +8,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
-/*  VARIÁVEIS DE CSS3  */
+/*  VARIÁVEIS DE CSS3 e CONFIGURAÇÕES GERAIS */
 :root { 
     --cor0: #ffffff;
     --cor1: #BF7F30;
@@ -51,6 +51,9 @@ p{
 img{
     width: 100%;
 }
+
+
+
 /* Typical Device Breakpoints
 ------------------------------
 Pequenas telas: até 600px
@@ -192,7 +195,7 @@ Grandes telas: acima de 1200px
         padding: 0px;
     }
 
-
+/*  ----------  SECTION SOBRE  ----------  */
 
     main .sobre{ 
         width: 100%;
@@ -212,12 +215,11 @@ Grandes telas: acima de 1200px
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0px;
+        padding: 10px;
     }
     main .sobre .img-henrique{
-        width: 200%;
+        width: 300%;
     }
-
     main .sobre-txt-right{
         height: 100%;
         margin: 0px;
@@ -238,9 +240,7 @@ Grandes telas: acima de 1200px
     }
 
 
-
-
-
+/*  ----------  SECTION SOLUÇÕES  ----------  */
     main .solucoes{
         border: rgb(255, 234, 0) solid 2px;
     }
