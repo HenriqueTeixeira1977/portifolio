@@ -136,7 +136,7 @@ p{
         font-size: var(--fonte-tam-pequena);
         font-weight: 700;
         text-transform: uppercase;
-        text-shadow: #000000 10px 10px 10px;
+        text-shadow: #00000094 2px 3px 3px;
 
     }
 
@@ -147,11 +147,10 @@ p{
         margin: auto ;
         padding: 0;
     }
-    main .home{ 
+    main .home{
         display: block;
-        height: 800px;
-        margin-top: 0px;
-        padding: 75px 0 0 0; 
+        height: 750px;
+        padding: 20px 0 0 0; 
     }
     main img{
         display: flex;
@@ -230,8 +229,7 @@ p{
     }
     .sobre .img-henrique{
         padding: 0px;
-        margin-bottom: 20px;
-
+        margin-bottom: 10px;
     }
     .sobre .sobre-txt {
         text-align: center;
@@ -246,7 +244,8 @@ p{
     .sobre .sobre-txt p {
         color: var(--cor0);
         text-align: justify;
-        margin: 0 0 50px 0;
+        margin: 0 0 20px 0;
+        line-height: 25px;
     }    
     .sobre .btn2 button{
         width: 200px;
@@ -401,7 +400,7 @@ p{
 /*  ----------  SECTION PORTIFOLIO  ----------  */
     main .portifolio{
         width: 100vw;
-        height: 1300px;
+        height: 1100px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -444,21 +443,17 @@ p{
     }
     main .portifolio .cards .card:hover{
         background: var(--cor5);
-        border: var(--cor2);
-
         border: var(--cor2) solid 2px;
         background-color: #000000;
         box-shadow: #00000072 5px 5px 5px 5px;
         transition: all .45s ease;
         transform: scale(1.1);
-
-
     }
 
 
 
 /*  ----------  SECTION CONTATOS  ----------  */
-    main .contatos{;
+    main .contatos{
         width: 100vw;
         height:1200px;
         margin: 0 0;
@@ -476,15 +471,19 @@ p{
         text-align: justify;
         margin: 20px 0;
     }
+    main .contatos .contact-icons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
     main .contatos .contact-icons a{
         display: inline-block;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 40px;
         height: 40px;
-        margin: 20px 5px 20px 5px;
-        padding: 8px;
-        
+        margin: 0px 0px 0px 0px;
+        padding: 8px;        
         color: var(--cor5);
         background: var(--cor2);
         border: var(--cor0) solid 2px;
@@ -510,7 +509,7 @@ p{
     }
     main .contatos .contact-form textarea {
         resize: none;
-         height: 240px;
+        height: 140px;
     }
     main .contatos .contact-form .submit {
         display: inline-block;
@@ -523,6 +522,9 @@ p{
         transform: scale(1.01);
         cursor: pointer;
     }
+
+
+
 /*  ----------  SECTION FOOTER  ----------  */
     footer{
         width: 100vw;
@@ -534,6 +536,7 @@ p{
         padding: 50px 7%;
         background-color: var(--cor5);
         color: var(--cor0);
+
     }
     footer .icons{
         display: flex;
@@ -559,7 +562,7 @@ p{
         height: 10%;
         margin: auto;
         margin-top: 50px;
-        padding: 18px 10px;
+        padding: 24px 24px;
         color: var(--cor5);
         background: var(--cor2);
         border:var(--cor0) solid 2px;
@@ -567,7 +570,7 @@ p{
     }
     footer .top a{
         color: var(--cor5);
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 700;
     }
     
