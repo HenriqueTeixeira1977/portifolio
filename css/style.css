@@ -476,7 +476,6 @@ p{
         text-align: justify;
         margin: 20px 0;
     }
-
     main .contatos .contact-icons a{
         display: inline-block;
         justify-content: space-around;
@@ -495,11 +494,9 @@ p{
     main .contatos .contact-icons a i{
         font-size: var(--fonte-tam-normal);
     }
-
     main .contatos .contact-form{
         position: relative;
     }
-
     main .contatos .contact-form form input, form textarea{
         width: 100%;
         padding: 15px;
@@ -522,33 +519,19 @@ p{
         color: var(--cor4);
         transition: all .45s ease;
     }
-
     main .contatos .contact-form .submit:hover {
         transform: scale(1.01);
         cursor: pointer;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*  ----------  SECTION FOOTER  ----------  */
+/*  ----------  SECTION FOOTER  ----------  */
     footer{
         width: 100vw;
-        height: 30vh;
+        height: 300px;
         display: block;
         justify-content: center;
         align-items: center;
-        margin: 0px 0 0 0;
-        padding: 75px 0px;
+        margin: auto;
+        padding: 50px 7%;
         background-color: var(--cor5);
         color: var(--cor0);
     }
@@ -556,16 +539,36 @@ p{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0px;
-        padding: 10px 50px;
+        margin: 0px 0 25px 0;
+        padding: 0 0;
     }
     footer .icons a{
         font-size: var(--fonte-tam-xgrande);
         color: var(--cor0);
     }
     footer .footer-txt p{
+        margin: 0px;
         text-align: center;
         font-size: var(--fonte-tam-pequena);
+    }
+    footer .top{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        height: 10%;
+        margin: auto;
+        margin-top: 50px;
+        padding: 18px 10px;
+        color: var(--cor5);
+        background: var(--cor2);
+        border:var(--cor0) solid 2px;
+        border-radius: 5px;
+    }
+    footer .top a{
+        color: var(--cor5);
+        font-size: 20px;
+        font-weight: 700;
     }
     
 }
