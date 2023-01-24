@@ -43,7 +43,7 @@ p{
     color: var(--cor0);
 }
 
-@media screen and (max-width: 767px) {    
+@media screen and (max-width: 767px){    
 /*  ----------  SESSÃO HEADER  ----------  */
     header{
         padding-top: 15px;
@@ -300,7 +300,6 @@ p{
 /*  ----------  SECTION ESPECIALIDADES  ----------  */
     main .skills{
         width: 100vw;
-        height: ;
         display: block;
         justify-content: center;
         align-items: center;
@@ -386,7 +385,7 @@ p{
         margin: 0 0 0 7%;
     }
 
-
+    
 /*  ----------  SECTION PORTIFOLIO  ----------  */
     main .portifolio{
         width: 100vw;
