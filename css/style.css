@@ -76,6 +76,9 @@ p{
         position: fixed;
         background-color: var(--cor5);
         z-index: 1000;
+
+        border-bottom: var(--cor2) solid 3px;
+
     }
     .nav-list{
         position: fixed;
@@ -208,6 +211,8 @@ p{
         font-size: var(--fonte-tam-normal);
     }
 
+
+
 /*  ----------  SECTION SOBRE  ----------  */
 
     main .sobre{
@@ -257,7 +262,7 @@ p{
 /*  ----------  SECTION SOLUÇÕES  ----------  */
     main .solucoes{
         width: 100vw;
-        height: 1350px;
+        height: 1400px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -277,12 +282,15 @@ p{
         padding: 25px 15px;
         background: #0000007d;
         border-radius: 10px;
-        transition: all .3s ease;
         border: var(--cor5) solid 2px;
     }
     main .solucoes .cards .card:hover{
         border: var(--cor2) solid 2px;
         background-color: #000000;
+        transform: scale(1.1);
+        transition: all .45s ease;
+
+        box-shadow: #00000072 5px 5px 5px 5px;
     }
     main .solucoes .cards .card img {
         width: 20%;    
@@ -295,19 +303,21 @@ p{
     main .solucoes .cards .card a{
         color: var(--cor2);
         padding: 10px;
+
     }
 
 
      
 /*  ----------  SECTION ESPECIALIDADES  ----------  */
-    main .skills{background: red;
+    main .skills{
         width: 100vw;
-        height: 100vh;
+        height: ;
         display: block;
         justify-content: center;
         align-items: center;
         margin: 0 0 0 0;
         padding: 95px 25px;
+        background: var(--cor5);
     }
     main .skills h2{
         text-align: center;
@@ -391,7 +401,7 @@ p{
 /*  ----------  SECTION PORTIFOLIO  ----------  */
     main .portifolio{
         width: 100vw;
-        height: 1350px;
+        height: 1300px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -438,18 +448,90 @@ p{
 
         border: var(--cor2) solid 2px;
         background-color: #000000;
+        box-shadow: #00000072 5px 5px 5px 5px;
+        transition: all .45s ease;
+        transform: scale(1.1);
+
 
     }
 
 
 
 /*  ----------  SECTION CONTATOS  ----------  */
-    main .contatos{background: red;
+    main .contatos{;
         width: 100vw;
-        height: 800px;
-        margin: 0 0 0 0;
-        padding: 75px 20px;
+        height:1200px;
+        margin: 0 0;
+        padding: 95px 7%;
+        text-align: center;
     }
+    main .contatos .contact-left{
+        margin: 20px 7%;
+    }
+    main .contatos .contact-left p{
+        text-align: justify;
+        margin: 0px 0px 0 0;
+    }
+    main .contatos .contact-data{
+        text-align: justify;
+        margin: 20px 0;
+    }
+
+    main .contatos .contact-icons a{
+        display: inline-block;
+        justify-content: space-around;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        margin: 20px 5px 20px 5px;
+        padding: 8px;
+        
+        color: var(--cor5);
+        background: var(--cor2);
+        border: var(--cor0) solid 2px;
+        border-radius: 50%;
+        box-shadow: #ffee0231 0px 5px 5px;
+    }
+    main .contatos .contact-icons a i{
+        font-size: var(--fonte-tam-normal);
+    }
+
+    main .contatos .contact-form{
+        position: relative;
+    }
+
+    main .contatos .contact-form form input, form textarea{
+        width: 100%;
+        padding: 15px;
+        background: var(--cor5);
+        color: var(--cor0);
+        border: none;
+        outline: none;
+        font-size: 15px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    main .contatos .contact-form textarea {
+        resize: none;
+         height: 240px;
+    }
+    main .contatos .contact-form .submit {
+        display: inline-block;
+        font-size: 16px;
+        background: var(--cor2);
+        color: var(--cor4);
+        transition: all .45s ease;
+    }
+
+    main .contatos .contact-form .submit:hover {
+        transform: scale(1.01);
+        cursor: pointer;
+    }
+
+
+
+
+
 
 
 
