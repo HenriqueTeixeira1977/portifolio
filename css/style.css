@@ -148,17 +148,18 @@ p{
         display: block;
         height: 800px;
         margin-top: 0px;
-        padding: 95px 0 0 0; 
+        padding: 75px 0 0 0; 
     }
     main img{
         display: flex;
         justify-content: center;
         width: 40vw;
         margin: auto;
+        padding: 0 0 20px 0;
     }
     main .home .home-txt{      
         margin: auto;  
-        padding: 0 10%;
+        padding: 0 10% 0px  10%;
         text-align: center;
         display:block;
         color: var(--cor0);
@@ -176,13 +177,13 @@ p{
     main .home-txt p{
         font-size: var(--fonte-tam-grande);
         line-height: 25px;
-        margin: 0 0 70px 0;
+        margin: 0 0 20px 0;
         padding: 0 0 0 0;
     }
     main button{
         width: 200px;
         height: 40px;
-        margin: 0px 0 20px 0;
+        margin: 0px 0 30px 0;
         background-color: var(--cor2);
         color: var(--cor5);
         border: var(--cor0) solid 2px;
@@ -232,15 +233,15 @@ p{
         padding: 10%;
     }
     .sobre .sobre-txt h2 {
-        margin: 0px 0;
+        margin: 30px 0;
     }
     .sobre .sobre-txt h3 {
-        margin: 10px 0;
+        margin: 30px 0;
     }
     .sobre .sobre-txt p {
         color: var(--cor0);
         text-align: justify;
-        margin: 0 0 20px 0;
+        margin: 0 0 50px 0;
     }    
     .sobre .btn2 button{
         width: 200px;
@@ -318,6 +319,7 @@ p{
         margin-bottom: 0px;
     }
     main .skills .skills-left P{
+        margin-top: 20px;
         text-align: justify;
     }
     main .skills .skills-left a {
@@ -337,7 +339,7 @@ p{
         color: var(--cor0);
     }
     main .skills .skills-right{
-        margin: 10px 0 50px 0;
+        margin: 50px 0 50px 0;
     }
     main .skills .skills-right .bars{
         margin-bottom: 10px;
@@ -435,28 +437,6 @@ p{
         background-color: #000000;
 
     }
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -471,7 +451,15 @@ p{
         padding: 75px 20px;
         /*border: #000000 solid 2px;*/
     }
-/*  ----------  SECTION FOOTER  ----------  */
+
+
+
+
+
+
+
+
+    /*  ----------  SECTION FOOTER  ----------  */
     footer{
         width: 100vw;
         height: 30vh;
