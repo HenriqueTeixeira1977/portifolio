@@ -140,15 +140,15 @@ p{
 
 /*  *************  SECTION HOME  ****************  */
     main {
-        margin-top: 75px;
+        margin-top: 0px;
         margin: auto ;
-        padding: 0 0%;
+        padding: 0;
     }
-    main .home{
+    main .home{ 
         display: block;
-        margin-top: 75px;
-        margin-bottom: 20px;
-        padding: 0px 0;
+        height: 800px;
+        margin-top: 0px;
+        padding: 95px 0 0 0; 
     }
     main img{
         display: flex;
@@ -211,16 +211,15 @@ p{
 
     main .sobre{
         width: 100vw;
-        height: 100vh;
+        height: 800px;
         display: block;
         justify-content: center;
         align-items: center;
         margin: 0px 0 0 0;
-        padding: 0px 20px;
+        padding: 95px 0 0 0;
         text-align: center;
     }
     main .sobre .titulo {
-        margin: 90px 0 0 0;
         text-align: center;
     }
     .sobre .img-henrique{
@@ -229,8 +228,8 @@ p{
 
     }
     .sobre .sobre-txt {
-        margin-top: 20px;
         text-align: center;
+        padding: 10%;
     }
     .sobre .sobre-txt h2 {
         margin: 0px 0;
@@ -257,39 +256,44 @@ p{
 /*  ----------  SECTION SOLUÇÕES  ----------  */
     main .solucoes{
         width: 100vw;
-        height: 100vh;
+        height: 1350px;
         display: block;
         justify-content: center;
         align-items: center;
-        margin: 0px 0 0 0;
-        padding: 75px 20px;
+        padding: 95px 0px;
         text-align: center;
     }
     main .solucoes .cards {
+
         padding: 20px 0px 20px 0px;
         text-align: justify;
     }
-    .card{
+    main .solucoes .cards .card{
         display: block;
         text-align: center;
+        max-width: 70vw;
+        margin: 15px 15%;
         padding: 25px 15px;
-        margin: 15px 0;
-        background-color: var(--cor5);
-        border-radius: 15px;
+        background: #0000007d;
+        border-radius: 10px;
         transition: all .3s ease;
-
+        border: var(--cor5) solid 2px;
     }
-    .card img {
-        width: 12%;
+    main .solucoes .cards .card:hover{
+        border: var(--cor2) solid 2px;
+        background-color: #000000;
     }
-    .card p {
+    main .solucoes .cards .card img {
+        width: 20%;    
+    }
+    main .solucoes .cards .card p {
         text-align: justify;
+        margin: 10px;
+        padding: 10px;
     }
-    .card:hover{
-        transition: all .3s ease;
-        border: #ffb73b;
-        background-color: #777777;
-
+    main .solucoes .cards .card a{
+        color: var(--cor2);
+        padding: 10px;
     }
 
 
@@ -301,14 +305,15 @@ p{
         display: block;
         justify-content: center;
         align-items: center;
-        margin: 0px 0 0 0;
-        padding: 75px 20px;
+        margin: 0 0 0 0;
+        padding: 95px 25px;
     }
     main .skills h2{
         text-align: center;
     }
     main .skills .skills-left{
-        margin: 20px 0;
+        margin: 50px 0;
+        padding: 0 0 25px 0 ;
         font-size: var(--fonte-tam-normal);
         margin-bottom: 0px;
     }
@@ -316,13 +321,13 @@ p{
         text-align: justify;
     }
     main .skills .skills-left a {
-        display: inline-block;
+        display: none;
         background: var(--cor2);
         color: var(--cor5);
         font-size: 20px;
         font-weight: 500;
         padding: 10px 30px;
-        margin: 15px 0 50px 0;
+        margin: 50px 0 25px 0;
         border-radius: 6px;
         border: var(--cor0) solid 1px;
         transition: all .3s ease;
@@ -330,6 +335,9 @@ p{
     main .skills .skills-left a:hover{
         background : none;
         color: var(--cor0);
+    }
+    main .skills .skills-right{
+        margin: 10px 0 50px 0;
     }
     main .skills .skills-right .bars{
         margin-bottom: 10px;
@@ -373,20 +381,85 @@ p{
     main .skills .skills-right .mysql::before{
         width: 29%;
     }
-    main .skills .tecnologias{
-        margin-top: 50px;
-    }
+
+
+
 /*  ----------  SECTION PORTIFOLIO  ----------  */
     main .portifolio{
         width: 100vw;
-        height: 100vh;
+        height: 1350px;
         display: block;
         justify-content: center;
         align-items: center;
-        margin: 0px 0 0 0;
-        padding: 75px 20px;
-        /*border: #000000 solid 2px;*/
+        padding: 95px 5%;
     }
+    main .portifolio h2{
+        text-align: center;
+    }
+    main .portifolio .cards{ 
+        margin: 15px 0 0 0;
+        padding: 10px;
+    }
+    main .portifolio .cards .card{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px 20px;
+        padding: 30px 0 30px 0 ;
+        height: 350px;
+        background: #0000007d;
+        border-radius: 10px;
+        transition: all .3s ease;
+        border: var(--cor5) solid 2px;
+        text-align: center;
+    }
+    main .portifolio .cards .card img{
+        padding: 10px 10px;
+    }
+    main .portifolio .cards .card h3{
+        padding: 0px 10px;
+    }
+    main .portifolio .cards .card p{
+        padding: 15px 20%;
+    }
+    main .portifolio .cards .card a{
+        padding: 30px 10px;
+        color: var(--cor2);
+    }
+    main .portifolio .cards .card:hover{
+        background: var(--cor5);
+        border: var(--cor2);
+
+        border: var(--cor2) solid 2px;
+        background-color: #000000;
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*  ----------  SECTION CONTATOS  ----------  */
     main .contatos{
         width: 100vw;
