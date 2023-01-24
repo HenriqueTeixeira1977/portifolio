@@ -43,8 +43,6 @@ p{
     color: var(--cor0);
 }
 
-
-
 @media screen and (max-width: 767px) {    
 /*  ----------  SESSÃO HEADER  ----------  */
     header{
@@ -140,7 +138,6 @@ p{
 
     }
 
-
 /*  *************  SECTION HOME  ****************  */
     main {
         margin-top: 0px;
@@ -210,10 +207,7 @@ p{
         font-size: var(--fonte-tam-normal);
     }
 
-
-
 /*  ----------  SECTION SOBRE  ----------  */
-
     main .sobre{
         width: 100vw;
         height: 800px;
@@ -256,7 +250,6 @@ p{
         border: var(--cor0) solid 2px;
         border-radius: 10px;
     }
-
 
 /*  ----------  SECTION SOLUÇÕES  ----------  */
     main .solucoes{
@@ -302,11 +295,8 @@ p{
     main .solucoes .cards .card a{
         color: var(--cor2);
         padding: 10px;
-
     }
 
-
-     
 /*  ----------  SECTION ESPECIALIDADES  ----------  */
     main .skills{
         width: 100vw;
@@ -428,7 +418,7 @@ p{
         text-align: center;
     }
     main .portifolio .cards .card img{
-        width: 35%;
+        width: 50%;
         padding: 10px 10px;
     }
     main .portifolio .cards .card h3{
@@ -449,7 +439,6 @@ p{
         transition: all .45s ease;
         transform: scale(1.1);
     }
-
 
 
 /*  ----------  SECTION CONTATOS  ----------  */
@@ -522,7 +511,6 @@ p{
         transform: scale(1.01);
         cursor: pointer;
     }
-
 
 
 /*  ----------  SECTION FOOTER  ----------  */
