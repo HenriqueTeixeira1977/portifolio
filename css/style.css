@@ -8,6 +8,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
+
 /*  VARIÁVEIS DE CSS3  */
 :root { 
     --cor0: #ffffff;
@@ -34,7 +35,6 @@ html, body {
     background-color: var(--cor4);
     margin: auto;
 }
-
 h2, h3{
     color: var(--cor2);
     font-weight: 200;
@@ -246,7 +246,7 @@ p{
     .sobre .btn2 button{
         width: 200px;
         height: 40px;
-        margin: 0px 0 20px 0;
+        margin: 0 0 20px 0%;
         background-color: var(--cor2);
         color: var(--cor5);
         border: var(--cor0) solid 2px;
@@ -300,7 +300,7 @@ p{
 
      
 /*  ----------  SECTION ESPECIALIDADES  ----------  */
-    main .skills{
+    main .skills{background: red;
         width: 100vw;
         height: 100vh;
         display: block;
@@ -313,7 +313,7 @@ p{
         text-align: center;
     }
     main .skills .skills-left{
-        margin: 50px 0;
+        margin: 50px 7%;
         padding: 0 0 25px 0 ;
         font-size: var(--fonte-tam-normal);
         margin-bottom: 0px;
@@ -339,7 +339,7 @@ p{
         color: var(--cor0);
     }
     main .skills .skills-right{
-        margin: 50px 0 50px 0;
+        margin: 50px 7% 50px 7%;
     }
     main .skills .skills-right .bars{
         margin-bottom: 10px;
@@ -383,7 +383,9 @@ p{
     main .skills .skills-right .mysql::before{
         width: 29%;
     }
-
+    main .skills button {
+        margin: 0 0 0 7%;
+    }
 
 
 /*  ----------  SECTION PORTIFOLIO  ----------  */
@@ -407,9 +409,9 @@ p{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 15px 20px;
+        margin: 15px 15%;
         padding: 30px 0 30px 0 ;
-        height: 350px;
+        height: 40%;
         background: #0000007d;
         border-radius: 10px;
         transition: all .3s ease;
@@ -417,6 +419,7 @@ p{
         text-align: center;
     }
     main .portifolio .cards .card img{
+        width: 35%;
         padding: 10px 10px;
     }
     main .portifolio .cards .card h3{
@@ -441,15 +444,11 @@ p{
 
 
 /*  ----------  SECTION CONTATOS  ----------  */
-    main .contatos{
+    main .contatos{background: red;
         width: 100vw;
-        height: 100vh;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        margin: 0px 0 0 0;
+        height: 800px;
+        margin: 0 0 0 0;
         padding: 75px 20px;
-        /*border: #000000 solid 2px;*/
     }
 
 
