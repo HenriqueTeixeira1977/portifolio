@@ -387,7 +387,7 @@ p{
 
 
 /*  ----------  SECTION PORTIFOLIO  ----------  */
-    main .portifolio{background: red;
+    main .portifolio{
         width: 100vw;
         height: 1350px;
         display: block;
@@ -523,6 +523,7 @@ p{
         padding: 50px 7%;
         background-color: var(--cor5);
         color: var(--cor0);
+        border-top: var(--cor2) solid 2px;
 
     }
     footer .icons{
