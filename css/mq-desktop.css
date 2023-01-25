@@ -31,19 +31,17 @@
 
 }
 html, body {
-    background-color: var(--cor5);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: var(--cor4);
-    margin: auto;
 }
 body{
-    width: 100vw;
     margin: auto;
     display: block;
     justify-content: center;
+    align-items: center;
 }
 main{
-    margin: auto;
+width: 100vw;
 }
 h2, h3{
     color: var(--cor2);
@@ -53,7 +51,7 @@ p{
     color: var(--cor0);
 }
 img{
-    width: 100%;
+    width: 70%;
 }
 
 
@@ -71,254 +69,525 @@ Grandes telas: acima de 1200px
 /*  VERSION TABLET  */
 @media screen and (min-width: 1025px) and (max-width:1920px) {
 
-    /*  ----------  SESSÃO HEADER  ----------  */   
-    header{
-        width: 100%;
-        position: fixed;
-        background: var(--cor5);
-        margin: auto;
-        top: 0;
-        left: 0;
-    }
-    header nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 80px;
-        margin: auto;
-        padding: 0 2%;
-    }
-    header .logo a h1{
-        font-size: var(--fonte-tam-normal);
-        font-weight: 700;
-        line-height: 15px;
-        color: var(--cor0);
-    }
-    header .logo span {
-        color: var(--cor2);
-    }
-    header nav .nav-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0px;
-        padding: 5px;
-    }
-    header nav .nav-list a{
-        font-size: var(--fonte-tam-normal);
-        color: var(--cor2);
-        padding: 0 5px;
-        transition: all .3s ease;
-    }
-    header nav .nav-list a:hover{
-        color: var(--cor0);    
-    }
-    header input, label{
-        display: none;
-    }    
-    header .aviso{
-        background: rgb(255, 0, 0);
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
+/*  ----------  SESSÃO HEADER  ----------  */   
+header{
+    width: 100%;
+    position: fixed;
+    background: var(--cor5);
+    margin: auto;
+    top: 0;
+    left: 0;
+    z-index: 10001;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    padding: 0 2%;
+    border-bottom: var(--cor2) solid 3px;
+}
+header .logo a h1{
+    font-size: var(--fonte-tam-normal);
+    font-weight: 700;
+    line-height: 15px;
+    color: var(--cor0);
+}
+header .logo span {
+    color: var(--cor2);
+}
+header nav .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 5px;
+}
+header nav .nav-list a{
+    font-size: var(--fonte-tam-normal);
+    color: var(--cor2);
+    padding: 0 5px;
+    transition: all .3s ease;
+}
+header nav .nav-list a:hover{
+    color: var(--cor0);    
+}
+header input, label{
+    display: none;
+}    
+header .aviso{
+    background: rgb(255, 247, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+}
+header .aviso p{
+    color: #000000;
+     
+}
+
 
 /*  *************  SECTION HOME  ****************  */
-    main .home{ background: rgb(0, 0, 0); border: rgb(255, 0, 0) solid 2px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row-reverse;
-        width: 100%;
-        height: 100vh;
-        margin-top: 95px;
-        margin: auto;
-        padding: 10% 5% 0 5%;
-    }
-    main .home-txt{
-        width: 60%;
-    }
-    main .home-txt h1{
-        margin: 10px 10px 0px 10px;
-        padding: 0px;
-        font-size: var(--fonte-tam-xxgrande);
-        font-weight: 700;
-        line-height: 40px;
-        color: var(--cor0);
-    }
-    main .home-txt span{
-        color: var(--cor2);
-    }
-    main .home-txt p {
-        margin: 0px 10px 0px 10px;
-        padding: 10px 0px;
-        font-size: var(--fonte-tam-normal);
-        font-weight: 200;
-        line-height: 20px;
-    }
-    main .home .btn1 {
-        margin: 10px 0 10px 10px;
-        padding: 5px 40px;
-        color: var(--cor5);
-        background-color: var(--cor2);
-        border-radius: 5px;
-        border: var(--cor0) solid 1px;
-    }
-    main .home .btn1 a{
-        color: var(--cor5);
-        font-size: var(--fonte-tam-grande);
-    }
-    main .home .icons {
-        width: 70%;
-        margin: 0px 10px 0px;
-        padding: 0px 0px;  
-        color: #ff0000;
-    }
-    main .home .icons button {
-        margin: 10px 10px 0 0 ;
-        padding: 10px 12px;
-        background: var(--cor2);
-        border: 2px solid var(--cor0);
-        border-radius: 50%;
+main{
+    width: 100vw;
+    margin: auto;
+}
+main .home{border: red solid 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 700px;
+    margin-top: 100px;
+    margin: auto;
+    padding: 0 25%;
+}
+main .home-txt{
+    width: 60%;
+}
+main .home-txt h1{
+    margin: 10px 10px 0px 10px;
+    padding: 0px;
+    font-size: var(--fonte-tam-xxgrande);
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--cor0);
+}
+main .home-txt span{
+    color: var(--cor2);
+}
+main .home-txt p {
+    margin: 0px 10px 0px 10px;
+    padding: 10px 0px;
+    font-size: var(--fonte-tam-normal);
+    font-weight: 200;
+    line-height: 20px;
+}
+main .home .btn1 {
+    margin: 10px 0 10px 10px;
+    padding: 5px 40px;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    border-radius: 5px;
+    border: var(--cor0) solid 1px;
+}
+main .home .btn1 a{
+    color: var(--cor5);
+    font-size: var(--fonte-tam-grande);
+}
+main .home .icons {
+    width: 70%;
+    margin: 0px 10px 0px;
+    padding: 0px 0px;  
+    color: #ff0000;
+}
+main .home .icons button {
+    margin: 10px 10px 0 0 ;
+    padding: 10px 12px;
+    background: var(--cor2);
+    border: 2px solid var(--cor0);
+    border-radius: 50%;
 
-    }
-    main .home .icons button a {
-        font-size: var(--fonte-tam-grande);
-        color: var(--cor5);
-    }    
-    main .home-img {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        width: 50%;
-        height: 50%;
-        margin: auto;
-    }
+}
+main .home .icons button a {
+    font-size: var(--fonte-tam-grande);
+    color: var(--cor5);
+}    
+main .home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
 
 /*  ----------  SECTION SOBRE  ----------  */
 
-    main .sobre{border: rgb(255, 0, 0) solid 2px;
-        width: 100%;
-        height: 700px;
-        margin-top: 0px;
-        padding: 20px;
-        display: block;
-        justify-content: space-around;
-        align-items: center;
-        text-align: center;
-    }
-    main .sobre .titulo { 
-        margin: 90px 0 0 0;
-        text-align: center;
-    }
-    main .sobre-txt{ 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
-    main .sobre .img-henrique{
-        width: 250%;
-        margin-bottom: 20px;
-    }
-    main .sobre-txt-right{
-        height: 100%;
-        margin: 0 0 0 20px;
-        padding: 0px 20px;
-        text-align: justify;
-    } 
-    main .btn2 button {
-        margin: 30px 0 10px 0px;
-        padding: 5px 40px;
-        color: var(--cor5);
-        background-color: var(--cor2);
-        border-radius: 5px;
-        border: var(--cor0) solid 1px;
-    }
-    main .btn2 button a{
-        color: var(--cor5);
-        font-size: var(--fonte-tam-grande);
-    }
+main .sobre{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:700px;
+    padding: 100px 20% 0 20%; 
+    text-align: center;
+}
+main .sobre .titulo { 
+    margin: 0 0 0 0;
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+main .sobre .img-henrique{
+    width: 500%;
+    margin-bottom: 20px;
+}
+main .sobre-txt{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;        
+}
+main .sobre-txt-right{
+    height: 100%;
+    margin: 0 0 0 20px;
+    padding: 0px 20px;
+    text-align: justify;
+} 
+main .btn2 button {
+    margin: 30px 0 10px 0px;
+    padding: 5px 40px;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    border-radius: 5px;
+    border: var(--cor0) solid 1px;
+}
+main .btn2 button a{
+    color: var(--cor5);
+    font-size: var(--fonte-tam-grande);
+}
 
 
 /*  ----------  SECTION SOLUÇÕES  ----------  */
-    main .solucoes{background: rgb(255, 0, 0); border: rgb(255, 251, 0) solid 2px;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: auto;
-        padding: 0 0% 0% 0%;
-        transition: all .3s ease;
+main .solucoes{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 750px;
+    margin: auto;
+    padding: 100px 0% 0% 0%;
+    transition: all .3s ease;
+}
+main .solucoes .titulo{
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+main .solucoes .cards {
+    display: flex;
+    margin-bottom: 90px;
+    padding: 0px 5%;
+}
+main .solucoes .cards .card {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    margin: 10px 10px;
+    padding: 20px;
+    background: #0000007d;
+    border-radius: 10px;
+    transition: all .3s ease;
+    transform: scaleX(10px);
+    border: var(--cor5) solid 2px;
+    box-shadow: #00000077 5px 5px 5px 5px;
+}
+main .solucoes .cards .card:hover{
+    background: var(--cor5);
+    border: var(--cor2) solid 2px;
+}    
+main .solucoes .cards .card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+    margin: auto;
+    padding: 30px 0px 20px 0px;
 
-    }
-    main .solucoes .titulo{
-        text-align: center;
-        margin: 0px 0 30px 0;
-    }
-    main .solucoes .cards {
-        display: flex;
-        margin-bottom: 90px;
-        padding: 0px 0;
-    }
-    main .solucoes .cards .card {
-        display: block;
-        justify-content: center;
-        margin: auto;
-        flex-direction: column;
-        margin: 10px 10px;
-        padding: 20px;
-        background: #0000007d;
-        border-radius: 10px;
-        transition: all .3s ease;
-        transform: scaleX(10px);
-        border: var(--cor5) solid 2px;
-        box-shadow: #00000077 5px 5px 5px 5px;
-    }
-    main .solucoes .cards .card:hover{
-        background: var(--cor5);
-        border: var(--cor2) solid 2px;
-    }    
-    main .solucoes .cards .card img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        width: 30%;
-        margin: auto;
-        padding: 30px 0px 20px 0px;
+}
+main .solucoes .cards .card h3{
+    text-align: center;
+}
+main .solucoes .cards .card p{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px 0 20px 0;
+}
+main .solucoes .cards .card a{
+    color: var(--cor2);
+    padding: 10px;
+}
 
-    }
-    main .solucoes .cards .card h3{
-        text-align: center;
-    }
-    main .solucoes .cards .card p{
-        text-align: justify;
-        margin: 10px;
-        padding: 10px 0 20px 0;
-    }
-    main .solucoes .cards .card a{
-        color: var(--cor2);
-        padding: 10px;
-    }
 
 
 /*  ----------  SECTION ESPECIALIDADES  ----------  */
-    main .skills{
-        margin-top: 150px;
-        border: rgb(0, 17, 255) solid 2px;
-    }
+main .skills{
+    width: 100vw;
+    height: 700px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 100px 10%;
+    background: var(--cor5);
+}
+main .skills h2{
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+main .skills .skills-left{
+    margin: 50px 7%;
+    padding: 0 0 25px 0 ;
+    font-size: var(--fonte-tam-normal);
+    margin-bottom: 0px;
+}
+main .skills .skills-left P{
+    margin-top: 20px;
+    text-align: justify;
+}
+main .skills .skills-left a {
+    display: none;
+    background: var(--cor2);
+    color: var(--cor5);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin: 50px 0 25px 0;
+    border-radius: 6px;
+    border: var(--cor0) solid 1px;
+    transition: all .3s ease;
+}
+main .skills .skills-left a:hover{
+    background : none;
+    color: var(--cor0);
+}
+main .skills .skills-right{
+    margin: 50px 7% 50px 7%;
+}
+main .skills .skills-right .bars{
+    margin-bottom: 10px;
+}
+main .skills .skills-right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .skills .skills-right span{
+    font-weight: 500;
+    font-size: var(--fonte-tam-normal);
+    color: var(--cor0);
+}
+main .skills .skills-right .line{
+    width: 100%;
+    height: 3px;
+    background: var(--cor3);
+    position: relative;
+}
+main .skills .skills-right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--cor2);
+}
+main .skills .skills-right .html::before{
+    width: 83%;
+}
+main .skills .skills-right .css::before{
+    width: 77%;
+}
+main .skills .skills-right .js::before{
+    width: 31%;
+}
+main .skills .skills-right .php::before{
+    width: 36%;
+}
+main .skills .skills-right .mysql::before{
+    width: 29%;
+}
+main .skills button {
+    margin: 0 0 0 7%;
+}
+
 /*  ----------  SECTION PORTIFÓLIO  ----------  */
-    main .portifolio{
-        border: rgb(166, 0, 255) solid 2px;
-    }
+main .portifolio{
+    width: 100vw;
+    height: 700px;
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 3% 0px 3%;
+}
+main .portifolio h2{
+    margin-bottom: 50px;
+    text-align: center;
+}
+main .portifolio .cards{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0%;
+}
+main .portifolio .cards .card{
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    width: 300px;
+    height: 40%;
+    
+    margin:  10px;
+    padding: 0px 0px 30px 0px ;
+    
+    background: #0000007d;
+    border-radius: 10px;
+    transition: all .3s ease;
+    border: var(--cor5) solid 2px;
+    text-align: center;
+}
+main .portifolio .cards .card img{
+    width: 100%;
+    padding: 0px 0px;
+}
+main .portifolio .cards .card h3{
+    padding: 0px 10px;
+}
+main .portifolio .cards .card p{
+    padding: 15px 20%;
+}
+main .portifolio .cards .card a{
+    padding: 30px 10px;
+    color: var(--cor2);
+}
+main .portifolio .cards .card:hover{
+    background: var(--cor5);
+    border: var(--cor2) solid 2px;
+    background-color: #000000;
+    box-shadow: #00000072 5px 5px 5px 5px;
+    transition: all .45s ease;
+    transform: scale(1.1);
+}
+
+
 /*  ----------  SECTION CONTATOS  ----------  */
-    main .contatos{
-        border: rgb(255, 0, 166) solid 2px;
-    }
-/*  ----------  SECTION RODAPÉ  ----------  */
-    footer{
-        border: red solid 2px;
-    }
+
+main .contatos{
+    width: 100vw;
+    height:1200px;
+    margin: 0 0;
+    padding: 95px 7%;
+    text-align: center;
+}
+main .contatos .contact-left{
+    margin: 20px 7%;
+}
+main .contatos .contact-left p{
+    text-align: justify;
+    margin: 0px 0px 0 0;
+}
+main .contatos .contact-data{
+    text-align: justify;
+    margin: 20px 0;
+}
+main .contatos .contact-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+main .contatos .contact-icons a{
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px 0px 0px;
+    padding: 8px;        
+    color: var(--cor5);
+    background: var(--cor2);
+    border: var(--cor0) solid 2px;
+    border-radius: 50%;
+    box-shadow: #ffee0231 0px 5px 5px;
+}
+main .contatos .contact-icons a i{
+    font-size: var(--fonte-tam-normal);
+}
+main .contatos .contact-form{
+    position: relative;
+}
+main .contatos .contact-form form input, form textarea{
+    width: 100%;
+    padding: 15px;
+    background: var(--cor5);
+    color: var(--cor0);
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+main .contatos .contact-form textarea {
+    resize: none;
+    height: 140px;
+}
+main .contatos .contact-form .submit {
+    display: inline-block;
+    font-size: 16px;
+    background: var(--cor2);
+    color: var(--cor4);
+    transition: all .45s ease;
+}
+main .contatos .contact-form .submit:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+
+
+/*  ----------  SECTION FOOTER  ----------  */
+footer{
+    width: 100vw;
+    height: 300px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 50px 7%;
+    background-color: var(--cor5);
+    color: var(--cor0);
+    border-top: var(--cor2) solid 2px;
+}
+footer .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0 25px 0;
+    padding: 0 0;
+}
+footer .icons a{
+    font-size: var(--fonte-tam-xgrande);
+    color: var(--cor0);
+}
+footer .footer-txt p{
+    margin: 0px;
+    text-align: center;
+    font-size: var(--fonte-tam-pequena);
+}
+footer .top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 10%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 24px 24px;
+    color: var(--cor5);
+    background: var(--cor2);
+    border:var(--cor0) solid 2px;
+    border-radius: 5px;
+}
+footer .top a{
+    color: var(--cor5);
+    font-size: 30px;
+    font-weight: 700;
+}
 }
