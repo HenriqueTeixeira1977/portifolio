@@ -8,12 +8,13 @@
     text-decoration: none;
     scroll-behavior: smooth;
 }
-/*  VARIÁVEIS DE CSS3  */
 
-:root {
+/*  VARIÁVEIS DE CSS3 e CONFIGURAÇÕES GERAIS */
+
+:root { 
     --cor0: #ffffff;
     --cor1: #BF7F30;
-    --cor2: #C68F2F;
+    --cor2: #ffb73b;
     --cor3: #777777;
     --cor4: #1b1a20;
     --cor5: #000000;
@@ -21,9 +22,9 @@
     --fonte-padrao: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --fonte-destaque: Arial;
     
-    --fonte-tam-xxgrande: 5em; 
-    --fonte-tam-xgrande: 3em; 
-    --fonte-tam-grande: 2em; 
+    --fonte-tam-xxgrande: 3em; 
+    --fonte-tam-xgrande: 2em; 
+    --fonte-tam-grande: 1.5em; 
     --fonte-tam-normal: 1em; 
     --fonte-tam-pequena: .8em; 
     --fonte-tam-xpequena: .5em; 
@@ -35,6 +36,27 @@ html, body {
     background-color: var(--cor4);
     margin: auto;
 }
+body{
+    width: 100vw;
+    margin: auto;
+    display: block;
+    justify-content: center;
+}
+main{
+    margin: auto;
+}
+h2, h3{
+    color: var(--cor2);
+    font-weight: 200;
+}
+p{
+    color: var(--cor0);
+}
+img{
+    width: 100%;
+}
+
+
 
 /* Typical Device Breakpoints
 ------------------------------
@@ -43,180 +65,260 @@ Celular: de 600px até 768px
 Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
+*/
 
 
-/*  VERSION DESKTOPS  */
-@media screen and (min-width: 992px){
+/*  VERSION TABLET  */
+@media screen and (min-width: 1025px) and (max-width:1920px) {
 
-/*----------  HEADER SECTION  ----------*/    
+    /*  ----------  SESSÃO HEADER  ----------  */   
     header{
+        width: 100%;
         position: fixed;
-        width: 100%;
+        background: var(--cor5);
+        margin: auto;
         top: 0;
-        right: 0;
-        z-index: 1000;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: transparent;
-        padding: 20px 10%;
-        border-bottom: 1px solid transparent;
-        transition: all .45s ease;
-        border: 2px solid red;
-
+        left: 0;
     }
-    header section{
+    header nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        height: 80px;
+        margin: auto;
+        padding: 0 2%;
     }
-    header section .logo h1{
-        color: var(--cor0);
+    header .logo a h1{
         font-size: var(--fonte-tam-normal);
-        font-weight: 100;
+        font-weight: 700;
+        line-height: 15px;
+        color: var(--cor0);
+    }
+    header .logo span {
+        color: var(--cor2);
+    }
+    header nav .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 5px;
+    }
+    header nav .nav-list a{
+        font-size: var(--fonte-tam-normal);
+        color: var(--cor2);
+        padding: 0 5px;
+        transition: all .3s ease;
+    }
+    header nav .nav-list a:hover{
+        color: var(--cor0);    
+    }
+    header input, label{
+        display: none;
+    }    
+    header .aviso{
+        background: rgb(255, 0, 0);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+/*  *************  SECTION HOME  ****************  */
+    main .home{ background: rgb(0, 0, 0); border: rgb(255, 0, 0) solid 2px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 100vh;
+        margin-top: 95px;
+        margin: auto;
+        padding: 10% 5% 0 5%;
+    }
+    main .home-txt{
+        width: 60%;
+    }
+    main .home-txt h1{
+        margin: 10px 10px 0px 10px;
+        padding: 0px;
+        font-size: var(--fonte-tam-xxgrande);
+        font-weight: 700;
+        line-height: 40px;
+        color: var(--cor0);
+    }
+    main .home-txt span{
+        color: var(--cor2);
+    }
+    main .home-txt p {
+        margin: 0px 10px 0px 10px;
+        padding: 10px 0px;
+        font-size: var(--fonte-tam-normal);
+        font-weight: 200;
         line-height: 20px;
     }
-    span{
-        color: var(--cor2);
-    }
-    header section nav ul{
-        display: flex;
-    }
-    header section nav ul li a {
-        color: var(--cor2);
-        font-size: var(--fonte-tam-normal);
-        font-weight: 500;
-        margin: 0 5px;
-        transition: all .45s ease;
-    }
-    header section nav ul li a:hover{
-        color: var(--cor0);
-    }
-    header section nav ul li a.ativo{
-        color: var(--cor0);
-    }
-    header section #burguer, #fechar{
-        font-size: 35px;
-        color: var(--cor0);
-        z-index: 10001;
-        cursor: pointer;
-        margin-left: 25;
-        display: none;
-    }   
-    header.sticky{
-        background-color: var(--cor5);
-        border-bottom: 2px solid var(--cor2);
-        padding: 12px 10%;
-    }
-
-
-
-
-/*----------  HOME SECTION  ----------*/    
-    main .home {
-        display: flex;
-        justify-content: space-between;
-        padding: 160px 10% 120px;
-    
-        border: 2px solid greenyellow;    
-    }
-
-    .home{
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        }
-    .home-txt{
-        width: 100%;
-        display: block;
-        margin: 0 10px;
-        padding: 0px;    
-        border: 2px solid red;
-    }
-    .home-txt h1{
-        font-size:var(--fonte-tam-xgrande);
-        font-weight: 700;
-        color: var(--cor0);
-        line-height: 1.1;
-        margin: 0 0 8px;
-    }
-    .home-txt p{
-        font-size: 1.5rem;
-        font-weight: 100;
-        color: var(--cor0);
-        line-height: 1.1;
-        margin: 0 0 18px;
-        padding: 0 0 0 0;
-    }
-    .home-txt .btn1 {
-        margin: 50px 0 0 0;
-    }
-    .home-txt .btn1 a{
-        display: inline-block;
-        justify-content: center;
-        align-items: center;
-        color: var(--cor0);
+    main .home .btn1 {
+        margin: 10px 0 10px 10px;
+        padding: 5px 40px;
+        color: var(--cor5);
         background-color: var(--cor2);
-        border: 2px solid rgb(255, 255, 255);
-        margin: 10px 10px 10px 0;
-        padding: 5px 50px 5px 50px;
-        font-size: 1.5rem;
-        border-radius: 10px;
-        font-weight: 600;
-        transition: all .45s ease;
+        border-radius: 5px;
+        border: var(--cor0) solid 1px;
     }
-    .home-txt .btn1 a:hover{
-        color: var(--cor4);
-        border: 2px solid var(--cor5);
-        transform: scale(0.9);
+    main .home .btn1 a{
+        color: var(--cor5);
+        font-size: var(--fonte-tam-grande);
     }
-    /*
-    .home-txt .icons{
-       display: flex;
-       margin: 50px 0 0 0;
+    main .home .icons {
+        width: 70%;
+        margin: 0px 10px 0px;
+        padding: 0px 0px;  
+        color: #ff0000;
     }
-    .home-txt .icons a{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 55px;
-        height: 55px;
-        font-size: 35px;
-        border-radius: 50%;
-        color: var(--cor0);
-        margin-right: 15px;
-        background-color: var(--cor2);
-        transition:  all .45s ease;
-    }
-    .home-txt .icons a:hover{
-        color: var(--cor4);
-        transform: scale(1.1) translateY(5px);
-    }
-    */
-
-    .home-img{
-        display: block;
-        justify-content: center;
-        align-items: center;
-        width: 500px;
-    }
-    .home-img img{
-        max-width: 100%;
-        width: 500px;
-        height: auto;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
+    main .home .icons button {
+        margin: 10px 10px 0 0 ;
+        padding: 10px 12px;
+        background: var(--cor2);
         border: 2px solid var(--cor0);
+        border-radius: 50%;
+
+    }
+    main .home .icons button a {
+        font-size: var(--fonte-tam-grande);
+        color: var(--cor5);
+    }    
+    main .home-img {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 50%;
+        height: 50%;
+        margin: auto;
+    }
+
+/*  ----------  SECTION SOBRE  ----------  */
+
+    main .sobre{border: rgb(255, 0, 0) solid 2px;
+        width: 100%;
+        height: 700px;
+        margin-top: 0px;
+        padding: 20px;
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    main .sobre .titulo { 
+        margin: 90px 0 0 0;
+        text-align: center;
+    }
+    main .sobre-txt{ 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    main .sobre .img-henrique{
+        width: 250%;
+        margin-bottom: 20px;
+    }
+    main .sobre-txt-right{
+        height: 100%;
+        margin: 0 0 0 20px;
+        padding: 0px 20px;
+        text-align: justify;
+    } 
+    main .btn2 button {
+        margin: 30px 0 10px 0px;
+        padding: 5px 40px;
+        color: var(--cor5);
+        background-color: var(--cor2);
+        border-radius: 5px;
+        border: var(--cor0) solid 1px;
+    }
+    main .btn2 button a{
+        color: var(--cor5);
+        font-size: var(--fonte-tam-grande);
     }
 
 
+/*  ----------  SECTION SOLUÇÕES  ----------  */
+    main .solucoes{background: rgb(255, 0, 0); border: rgb(255, 251, 0) solid 2px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: auto;
+        padding: 0 0% 0% 0%;
+        transition: all .3s ease;
+
+    }
+    main .solucoes .titulo{
+        text-align: center;
+        margin: 0px 0 30px 0;
+    }
+    main .solucoes .cards {
+        display: flex;
+        margin-bottom: 90px;
+        padding: 0px 0;
+    }
+    main .solucoes .cards .card {
+        display: block;
+        justify-content: center;
+        margin: auto;
+        flex-direction: column;
+        margin: 10px 10px;
+        padding: 20px;
+        background: #0000007d;
+        border-radius: 10px;
+        transition: all .3s ease;
+        transform: scaleX(10px);
+        border: var(--cor5) solid 2px;
+        box-shadow: #00000077 5px 5px 5px 5px;
+    }
+    main .solucoes .cards .card:hover{
+        background: var(--cor5);
+        border: var(--cor2) solid 2px;
+    }    
+    main .solucoes .cards .card img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 30%;
+        margin: auto;
+        padding: 30px 0px 20px 0px;
+
+    }
+    main .solucoes .cards .card h3{
+        text-align: center;
+    }
+    main .solucoes .cards .card p{
+        text-align: justify;
+        margin: 10px;
+        padding: 10px 0 20px 0;
+    }
+    main .solucoes .cards .card a{
+        color: var(--cor2);
+        padding: 10px;
+    }
+
+
+/*  ----------  SECTION ESPECIALIDADES  ----------  */
+    main .skills{
+        margin-top: 150px;
+        border: rgb(0, 17, 255) solid 2px;
+    }
+/*  ----------  SECTION PORTIFÓLIO  ----------  */
+    main .portifolio{
+        border: rgb(166, 0, 255) solid 2px;
+    }
+/*  ----------  SECTION CONTATOS  ----------  */
+    main .contatos{
+        border: rgb(255, 0, 166) solid 2px;
+    }
+/*  ----------  SECTION RODAPÉ  ----------  */
+    footer{
+        border: red solid 2px;
+    }
 }

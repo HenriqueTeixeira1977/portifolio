@@ -43,7 +43,7 @@ p{
     color: var(--cor0);
 }
 
-@media screen and (max-width: 767px){    
+@media screen and (max-width: 768px){    
 /*  ----------  SESSÃO HEADER  ----------  */
     header{
         padding-top: 15px;
@@ -146,8 +146,8 @@ p{
     }
     main .home{
         display: block;
-        height: 750px;
-        padding: 20px 0 0 0; 
+        height: 800px;
+        padding: 10% 0 0 0; 
     }
     main img{
         display: flex;
@@ -385,15 +385,15 @@ p{
         margin: 0 0 0 7%;
     }
 
-    
+
 /*  ----------  SECTION PORTIFOLIO  ----------  */
-    main .portifolio{
+    main .portifolio{background: red;
         width: 100vw;
-        height: 1100px;
+        height: 1350px;
         display: block;
         justify-content: center;
         align-items: center;
-        padding: 95px 5%;
+        padding: 95px 7% 0px 7%;
     }
     main .portifolio h2{
         text-align: center;
