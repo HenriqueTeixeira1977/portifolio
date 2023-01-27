@@ -166,7 +166,7 @@ p{
     main .home-txt h1{
         margin: 20px 0 20px 0;
         padding: 0px 0;
-        font-size: var(--fonte-tam-xxgrande);
+        font-size: var(--fonte-tam-xgrande);
         font-weight: 500;
         line-height: 37px;
     }
@@ -174,37 +174,50 @@ p{
         color: var(--cor2);
     }
     main .home-txt p{
-        font-size: var(--fonte-tam-grande);
+        font-size: var(--fonte-tam-normal);
         line-height: 25px;
         margin: 0 0 20px 0;
         padding: 0 0 0 0;
     }
-    main button{
-        width: 200px;
-        height: 40px;
-        margin: 0px 0 30px 0;
-        background-color: var(--cor2);
-        color: var(--cor5);
-        border: var(--cor0) solid 2px;
-        border-radius: 10px;
+    .home-txt .btn1{
+        border: none;
+        margin: 30px 0px ;
     }
-    main button a {
-        color: var(--cor5);
+    .home-txt .btn1 a{
+        background: var(--cor2);
+        padding: 5px 40px;
         font-size: var(--fonte-tam-grande);
-    }
-    main .icons button {
-        display: inline-block;
-        justify-content: space-around;
-        align-items: center;
-        width: 50px;
-        height: 50px;
-        margin: 20px 10px 20px 10px;
+        color: var(--cor5);
         border: var(--cor0) solid 2px;
-        border-radius: 50%;
-        box-shadow: #ffee0231 0px 5px 5px;
+        border-radius: 5px;
     }
-    main .icons button a i{
-        font-size: var(--fonte-tam-normal);
+    .home-txt .btn1 a:hover{
+        background: var(--cor1);
+        color: var(--cor0);
+    }
+    .home-txt .icons button {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        background: var(--cor4);
+        border: none;
+        padding: 1%;
+        border-radius: 50%;
+        cursor: pointer;
+    }   
+    .home-txt .icons button a {
+        background: var(--cor5);
+        border: var(--cor0) solid 1px;
+        border-radius: 50%;
+        padding: 22px 10px 10px 10px;
+    } 
+    .home-txt .icons button a i{        
+        display: inline;
+        justify-content: center;
+        align-items: center;        
+        color: var(--cor2);
+        font-size: 30px;
+        border-radius: 50%;             
     }
 
 /*  ----------  SECTION SOBRE  ----------  */

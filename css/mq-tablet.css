@@ -128,81 +128,99 @@ Grandes telas: acima de 1200px
 
 
 /*  *************  SECTION HOME  ****************  */
-    main{
-        width: 100vw;
-        margin: auto;
-        padding: 20px 0px 0px 0px;
-    }
-    main .home{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row-reverse;
-        width: 100vw;
-        height: 700px;
-        margin-top: 100px;
-        margin: auto;
-        padding: 0 3%;
-    }
-    main .home-txt{
-        width: 60%;
-    }
-    main .home-txt h1{
-        margin: 10px 10px 0px 10px;
-        padding: 0px;
-        font-size: var(--fonte-tam-xxgrande);
-        font-weight: 700;
-        line-height: 40px;
-        color: var(--cor0);
-    }
-    main .home-txt span{
-        color: var(--cor2);
-    }
-    main .home-txt p {
-        margin: 0px 10px 0px 10px;
-        padding: 10px 0px;
-        font-size: var(--fonte-tam-normal);
-        font-weight: 200;
-        line-height: 20px;
-    }
-    main .home .btn1 {
-        margin: 10px 0 10px 10px;
-        padding: 5px 40px;
-        color: var(--cor5);
-        background-color: var(--cor2);
-        border-radius: 5px;
-        border: var(--cor0) solid 1px;
-    }
-    main .home .btn1 a{
-        color: var(--cor5);
-        font-size: var(--fonte-tam-grande);
-    }
-    main .home .icons {
-        width: 70%;
-        margin: 0px 10px 0px;
-        padding: 0px 0px;  
-        color: #ff0000;
-    }
-    main .home .icons button {
-        margin: 10px 10px 0 0 ;
-        padding: 10px 12px;
-        background: var(--cor2);
-        border: 2px solid var(--cor0);
-        border-radius: 50%;
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    height: 600px;
+    margin: auto;
+    padding: 0 2%; 
+    margin-top: 100px;       
+}
+.home-txt{
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 20% 0 0 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.home-txt h1{
+    font-size: var(--fonte-tam-xxgrande);
+    line-height: 40px;
+    color: var(--cor0);
+    margin-bottom: 10px;
+    text-shadow: #0000007f 10px 10px 10px;
+}
+.home-txt span{
+    color: var(--cor2);
+}
+.home-txt p{
+    color: var(--cor0);
+    font-size: var(--fonte-tam-grande);
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.home-txt .btn1{
+    border: none;
+    margin: 30px 0px ;
+}
+.home-txt .btn1 a{
+    background: var(--cor2);
+    padding: 5px 40px;
+    font-size: var(--fonte-tam-grande);
+    color: var(--cor5);
+    border: var(--cor0) solid 2px;
+    border-radius: 5px;
+}
+.home-txt .btn1 a:hover{
+    background: var(--cor1);
+    color: var(--cor0);
+}
+.home-txt .icons button {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    background: var(--cor4);
+    border: none;
+    padding: 1%;
+    border-radius: 50%;
+    cursor: pointer;
+}   
+.home-txt .icons button a {
+    background: var(--cor5);
+    border: var(--cor0) solid 1px;
+    border-radius: 50%;
+    padding: 22px 10px 10px 10px;
+} 
+.home-txt .icons button a i{        
+    display: inline;
+    justify-content: center;
+    align-items: center;        
+    color: var(--cor2);
+    font-size: 30px;
+    border-radius: 50%;             
+}
+.home-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    margin: 0 0 0 0;
+    padding: 0px 0px 0 0;
+}
+.home-img img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
 
-    }
-    main .home .icons button a {
-        font-size: var(--fonte-tam-grande);
-        color: var(--cor5);
-    }    
-    main .home-img {
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        width: 80%;
-        height: 80%;
-        margin: auto;
-    }
 
 /*  ----------  SECTION SOBRE  ----------  */
 

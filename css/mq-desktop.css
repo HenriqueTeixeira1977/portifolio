@@ -121,6 +121,7 @@ header .aviso{
 }
 header .aviso p{
     color: #000000;
+    text-shadow: #000000 10px 10px 10px 10px;
      
 }
 
@@ -134,7 +135,7 @@ header .aviso p{
         max-width: 1200px;
         height: 700px;
         margin: auto;
-        padding: 0 0 0 0;        
+        padding: 0 0%;        
     }
     .home-txt{
         width: 50%;
@@ -224,43 +225,68 @@ header .aviso p{
         display: block;
         justify-content: center;
         align-items: center;
+        max-width: 1200px;
         width: 100%;
-        height:700px;
-        padding: 100px 20% 0 20%; 
+        height: 600px;
+        margin: auto;
+        padding: 100px 0 0 0; 
         text-align: center;
+
     }
     main .sobre .titulo { 
-        margin: 0 0 0 0;
-        padding: 50px 0 0 0;
         text-align: center;
-    }
-    main .sobre .img-henrique{
-        width: 500%;
-        margin-bottom: 20px;
     }
     main .sobre-txt{ 
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        padding: 10px;        
+        width: 100%;
+        height: 100%;
+    }
+    main .sobre .img-henrique{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        margin: 0 0 0 0%;
+        padding: 0 0 0 5%;
+    }
+    main .sobre .img-henrique img{
+        width: 83%;
+        height: 100%;
     }
     main .sobre-txt-right{
-        height: 100%;
-        margin: 0 0 0 20px;
-        padding: 0px 20px;
+        width: 50%;
+        height: 75%;
+        margin: 0 0 0 0;
+        padding: 0px 5% 0 0;
         text-align: justify;
     } 
-    main .btn2 button {
-        margin: 30px 0 10px 0px;
-        padding: 5px 40px;
-        color: var(--cor5);
-        background-color: var(--cor2);
-        border-radius: 5px;
-        border: var(--cor0) solid 1px;
+    main .sobre-txt-right h3{
+        font-size: var(--fonte-tam-xgrande);
+        font-weight: 500;
     }
-    main .btn2 button a{
-        color: var(--cor5);
+    main .sobre-txt-right p{
         font-size: var(--fonte-tam-grande);
+        font-weight: 100;
+        line-height: 30px;
+    }
+    main .sobre-txt-right .btn2{
+        border: none;
+        margin: 30px 0px ;
+    }
+    main .sobre-txt-right .btn2 a{
+        background: var(--cor2);
+        padding: 5px 40px;
+        font-size: var(--fonte-tam-grande);
+        color: var(--cor5);
+        border: var(--cor0) solid 2px;
+        border-radius: 5px;
+    }
+    main .sobre-txt-right .btn2 a:hover{
+        background: var(--cor1);
+        color: var(--cor0);
     }
 
 
@@ -269,6 +295,7 @@ header .aviso p{
         display: block;
         justify-content: center;
         align-items: center;
+        max-width: 1200px;
         width: 100vw;
         height: 750px;
         margin: auto;
@@ -310,7 +337,6 @@ header .aviso p{
         width: 30%;
         margin: auto;
         padding: 30px 0px 20px 0px;
-
     }
     main .solucoes .cards .card h3{
         text-align: center;
@@ -325,26 +351,34 @@ header .aviso p{
         padding: 10px;
     }
 
-
-
     /*  ----------  SECTION ESPECIALIDADES  ----------  */
     main .skills{
+        max-width: 1200px;
         width: 100vw;
         height: 700px;
         display: block;
         justify-content: center;
         align-items: center;
-        margin: 0 0 0 0;
+        margin: auto;
         padding: 100px 10%;
         background: var(--cor5);
     }
-    main .skills h2{
-        padding: 20px 0 0 0;
+    main .skills .titulo{
+        padding: 0 0 0 0;
         text-align: center;
     }
+    main .skills .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
     main .skills .skills-left{
-        margin: 50px 7%;
-        padding: 0 0 25px 0 ;
+        width: 50%;
+        height: 70%;
+        margin: 0px 0% 0 5%;
+        padding: 80px 25px 0 10px;
         font-size: var(--fonte-tam-normal);
         margin-bottom: 0px;
     }
@@ -353,13 +387,17 @@ header .aviso p{
         text-align: justify;
     }
     main .skills .skills-left a {
-        display: none;
+        display: block;
+        justify-content: center;
+        align-items: center;
         background: var(--cor2);
         color: var(--cor5);
         font-size: 20px;
         font-weight: 500;
-        padding: 10px 30px;
-        margin: 50px 0 25px 0;
+        text-align: center;
+        width: 50%;
+        padding: 5px 0px;
+        margin: 50px 0 25px 0;        
         border-radius: 6px;
         border: var(--cor0) solid 1px;
         transition: all .3s ease;
@@ -369,7 +407,13 @@ header .aviso p{
         color: var(--cor0);
     }
     main .skills .skills-right{
-        margin: 50px 7% 50px 7%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 70%;
+        margin: 0px 5% 0px 0%;
+        padding: 80px 10px 10px 25px;
     }
     main .skills .skills-right .bars{
         margin-bottom: 10px;
@@ -414,17 +458,19 @@ header .aviso p{
         width: 29%;
     }
     main .skills button {
+        display: none;
         margin: 0 0 0 7%;
     }
 
     /*  ----------  SECTION PORTIFÓLIO  ----------  */
     main .portifolio{
+        max-width: 1200px;
         width: 100vw;
         height: 700px;
-
         display: block;
         justify-content: center;
         align-items: center;
+        margin: auto;
         padding: 100px 3% 0px 3%;
     }
     main .portifolio h2{
@@ -443,13 +489,10 @@ header .aviso p{
         display: block;
         justify-content: center;
         align-items: center;
-
         width: 300px;
-        height: 40%;
-        
+        height: 40%;        
         margin:  10px;
-        padding: 0px 0px 30px 0px ;
-        
+        padding: 0px 0px 30px 0px;        
         background: #0000007d;
         border-radius: 10px;
         transition: all .3s ease;
@@ -483,47 +526,67 @@ header .aviso p{
     /*  ----------  SECTION CONTATOS  ----------  */
 
     main .contatos{
+        max-width: 1200px;
         width: 100vw;
-        height:1200px;
-        margin: 0 0;
-        padding: 95px 7%;
+        height: 700px;
+        margin:auto;
+        padding: 100px 0%;
         text-align: center;
     }
+    main .contatos .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }        
     main .contatos .contact-left{
-        margin: 20px 7%;
+        width: 50%;
+        height: 100%;
+        margin: 0px;
+        padding: 50px;
     }
     main .contatos .contact-left p{
         text-align: justify;
         margin: 0px 0px 0 0;
+        padding: 0 0 0px 0;
     }
     main .contatos .contact-data{
         text-align: justify;
-        margin: 20px 0;
+        margin: 25px 0;
+
     }
     main .contatos .contact-icons {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 50px;
+        align-items: center;
+        width:60%;
+        margin: 0;
+        padding: 0px;
+        margin-bottom: 0px;
     }
     main .contatos .contact-icons a{
         display: inline-block;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
         width: 40px;
         height: 40px;
         margin: 0px 0px 0px 0px;
-        padding: 8px;        
+        padding: 5px;        
         color: var(--cor5);
         background: var(--cor2);
         border: var(--cor0) solid 2px;
         border-radius: 50%;
-        box-shadow: #ffee0231 0px 5px 5px;
+        box-shadow: #00000031 10px 5px 5px;
     }
-    main .contatos .contact-icons a i{
-        font-size: var(--fonte-tam-normal);
+    main .contatos .contact-icons a i{        
+        font-size: var(--fonte-tam-normal);        
+        margin: 0px;
+        padding: 0px;
     }
-    main .contatos .contact-form{
+    main .contatos .contact-form{ 
         position: relative;
+        width: 50%;
+        height: 100%;
+        padding: 50px;
     }
     main .contatos .contact-form form input, form textarea{
         width: 100%;
@@ -552,8 +615,6 @@ header .aviso p{
         cursor: pointer;
     }
 
-
-
     /*  ----------  SECTION FOOTER  ----------  */
     footer{
         width: 100vw;
@@ -569,36 +630,40 @@ header .aviso p{
     }
     footer .icons{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        margin: 0px 0 25px 0;
-        padding: 0 0;
+        margin: 0 0 10px 0;
+        padding: 0 ;
     }
     footer .icons a{
         font-size: var(--fonte-tam-xgrande);
         color: var(--cor0);
+        padding: 10px;
     }
     footer .footer-txt p{
         margin: 0px;
         text-align: center;
         font-size: var(--fonte-tam-pequena);
     }
-    footer .top{
+    footer .top a{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 10%;
-        height: 10%;
+        width: 50px;
+        height: 50px;
         margin: auto;
         margin-top: 50px;
-        padding: 24px 24px;
+        padding: 20px 0px;
+        font-size: 30px;
+        font-weight: 700;
         color: var(--cor5);
         background: var(--cor2);
         border:var(--cor0) solid 2px;
         border-radius: 5px;
     }
-    footer .top a{
-        color: var(--cor5);
+    footer .top a:hover{
+        background: var(--cor5);
+        color: var(--cor2);
         font-size: 30px;
         font-weight: 700;
     }
