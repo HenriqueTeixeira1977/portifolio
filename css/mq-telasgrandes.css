@@ -76,7 +76,7 @@ header nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     margin: auto;
     padding: 0 2%;
@@ -125,21 +125,20 @@ header .aviso p{
 
 
 /*  *************  SECTION HOME  ****************  */
-    .home{
+    .home{background: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
-        max-width: 1200px;
-        height: 700px;
+        max-width: 1500px;
+        height: 100vh;
         margin: auto;
         padding: 0 0%;        
     }
-    .home-txt{
+    .home-txt{ background: green;
         width: 50%;
-        height: 100%;
         margin: auto;
-        padding: 20% 0 0 20px;
+        padding: 0% 0 0 20px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -200,10 +199,16 @@ header .aviso p{
         font-size: 30px;
         border-radius: 50%;             
     }
-    .home-img{
+    .home-img{ background: yellow;
+        background-image: url(/img/imagem-home.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
         display: flex;
         justify-content: center;
         align-items: center;
+
         width: 60%;
         height: 100%;
         margin: 0 0 0 0;

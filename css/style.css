@@ -142,19 +142,33 @@ p{
     main {
         margin-top: 0px;
         margin: auto ;
-        padding: 0;
     }
     main .home{
         display: block;
-        height: 800px;
+        height: 600px;
         padding: 10% 0 0 0; 
     }
-    main img{
+    .home-img{ background: rgb(75, 75, 75);
+        background-image: url(/img/imagem-home.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
         display: flex;
         justify-content: center;
-        width: 40vw;
-        margin: auto;
-        padding: 0 0 20px 0;
+        align-items: center;
+
+        width: 100%;
+        height: 35%;
+        margin: 0 0 0 0;
+        padding: 0px 0;
+    }
+    .home-img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 80%;
     }
     main .home .home-txt{      
         margin: auto;  
@@ -221,9 +235,10 @@ p{
     }
 
 /*  ----------  SECTION SOBRE  ----------  */
-    main .sobre{
+    main .sobre{background: red;
+        
         width: 100vw;
-        height: 800px;
+        height: 100%;
         display: block;
         justify-content: center;
         align-items: center;
@@ -235,18 +250,20 @@ p{
         text-align: center;
     }
     .sobre .img-henrique{
+        width: 50%;
+        margin-bottom: 0px;
+        margin: auto;
         padding: 0px;
-        margin-bottom: 10px;
     }
     .sobre .sobre-txt {
         text-align: center;
-        padding: 10%;
+        padding: 0% 10%;
     }
     .sobre .sobre-txt h2 {
-        margin: 30px 0;
+        margin: 20px 0;
     }
     .sobre .sobre-txt h3 {
-        margin: 30px 0;
+        margin: 20px 0 0 0;
     }
     .sobre .sobre-txt p {
         color: var(--cor0);
@@ -254,20 +271,23 @@ p{
         margin: 0 0 20px 0;
         line-height: 25px;
     }    
-    .sobre .btn2 button{
-        width: 200px;
-        height: 40px;
-        margin: 0 0 20px 0%;
-        background-color: var(--cor2);
+    main .btn2 button {
+        margin: 20px 0 50px 0px;
+        padding: 5px 40px;
         color: var(--cor5);
-        border: var(--cor0) solid 2px;
-        border-radius: 10px;
+        background-color: var(--cor2);
+        border-radius: 5px;
+        border: var(--cor0) solid 1px;
+    }
+    main .btn2 button a{
+        color: var(--cor5);
+        font-size: var(--fonte-tam-grande);
     }
 
 /*  ----------  SECTION SOLUÇÕES  ----------  */
     main .solucoes{
         width: 100vw;
-        height: 1400px;
+        height: 100%;
         display: block;
         justify-content: center;
         align-items: center;
@@ -312,6 +332,7 @@ p{
 
 /*  ----------  SECTION ESPECIALIDADES  ----------  */
     main .skills{
+
         width: 100vw;
         display: block;
         justify-content: center;
@@ -320,9 +341,14 @@ p{
         padding: 95px 25px;
         background: var(--cor5);
     }
+    main .skills .titulo{
+        text-align: center;
+        margin-bottom: 50px;
+    }
     main .skills h2{
         text-align: center;
     }
+
     main .skills .skills-left{
         margin: 50px 7%;
         padding: 0 0 25px 0 ;
@@ -394,15 +420,29 @@ p{
     main .skills .skills-right .mysql::before{
         width: 29%;
     }
-    main .skills button {
-        margin: 0 0 0 7%;
+    .btn4{
+        display: flex;
+        margin: auto;
+    }
+    .btn4 a{
+        background: var(--cor2);
+        padding: 5px 40px;
+        font-size: var(--fonte-tam-grande);
+        color: var(--cor5);
+        border: var(--cor0) solid 2px;
+        border-radius: 5px;
+        margin: auto;
+    }
+    .btn4 a:hover{
+        background: var(--cor1);
+        color: var(--cor0);
     }
 
 
 /*  ----------  SECTION PORTIFOLIO  ----------  */
     main .portifolio{
         width: 100vw;
-        height: 1350px;
+        height: 100%;
         display: block;
         justify-content: center;
         align-items: center;
@@ -472,7 +512,7 @@ p{
         text-align: justify;
         margin: 20px 0;
     }
-    main .contatos .contact-icons {
+    main .contatos .contact-icons {background: red;
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
