@@ -66,9 +66,7 @@ Grandes telas: acima de 1200px
 header{
     width: 100%;
     position: fixed;
-    /*background: var(--cor5);*/
-    background: #00000087;
-
+    background: var(--cor5);
     margin: auto;
     top: 0;
     left: 0;
