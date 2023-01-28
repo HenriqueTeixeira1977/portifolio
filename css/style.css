@@ -141,14 +141,15 @@ p{
 /*  *************  SECTION HOME  ****************  */
     main {
         margin-top: 0px;
-        margin: auto ;
+        margin: auto;
     }
     main .home{
         display: block;
-        height: 600px;
-        padding: 10% 0 0 0; 
+        height: 100vh;
+        padding: 65px 0 0 0; 
     }
-    .home-img{ background: rgb(75, 75, 75);
+    .home-img{
+        background-color: var(--cor5);
         background-image: url(/img/imagem-home.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -235,7 +236,7 @@ p{
     }
 
 /*  ----------  SECTION SOBRE  ----------  */
-    main .sobre{background: red;
+    main .sobre{
         
         width: 100vw;
         height: 100%;
@@ -512,7 +513,7 @@ p{
         text-align: justify;
         margin: 20px 0;
     }
-    main .contatos .contact-icons {background: red;
+    main .contatos .contact-icons {
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
