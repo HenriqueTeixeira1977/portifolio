@@ -130,7 +130,6 @@ Grandes telas: acima de 1200px
         align-items: center;
         flex-direction: row-reverse;
         max-width: 1200px;
-
         height: 100vh;
         margin: auto;
         padding: 0 0%;        
@@ -139,7 +138,8 @@ Grandes telas: acima de 1200px
         width: 50%;
         height: 100%;
         margin: auto;
-        padding: 20% 0 0 20px;
+        margin-top: 50px;
+        padding: 180px 0 0 20px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -210,10 +210,10 @@ Grandes telas: acima de 1200px
         justify-content: center;
         align-items: center;
 
-        width: 60%;
+        width: 50%;
         height: 100%;
-        margin: 0 0 0 0;
-        padding: 0px 0;
+        margin-top: 0px;
+        padding: 0px;
     }
     .home-img img{
         display: flex;
@@ -354,13 +354,16 @@ Grandes telas: acima de 1200px
     /*  ----------  SECTION ESPECIALIDADES  ----------  */
     main .skills{ 
         max-width: 1200px;
-        height: 700px;
+        width: 100%;
+        height: 100%;
         display: block;
         justify-content: center;
         align-items: center;
         margin: auto;
         padding: 100px 10%;
-        /*background: var(--cor5);*/
+        background: var(--cor5);
+        border-radius: 10px;
+
     }
     main .skills .titulo{
         text-align: center;
@@ -467,7 +470,7 @@ Grandes telas: acima de 1200px
     /*  ----------  SECTION PORTIFÓLIO  ----------  */
     main .portifolio{
         max-width: 1200px;
-        width: 100vw;
+        width: 100%;
         height: 700px;
         display: block;
         justify-content: center;
@@ -526,7 +529,7 @@ Grandes telas: acima de 1200px
     /*  ----------  SECTION CONTATOS  ----------  */
     main .contatos{
         max-width: 1200px;
-        width: 100vw;
+        width: 100%;
         height: 700px;
         margin:auto;
         padding: 100px 0%;
@@ -615,7 +618,7 @@ Grandes telas: acima de 1200px
     }
     /*  ----------  SECTION FOOTER  ----------  */
     footer{
-        max-width: 1200px;
+        width: 100%;
         height: 300px;
         display: block;
         justify-content: center;

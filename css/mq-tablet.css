@@ -132,16 +132,16 @@ Grandes telas: acima de 1200px
         align-items: center;
         flex-direction: row-reverse;
         max-width: 1000px;
-        height: 800px;
+        height: 600px;
         margin: auto;
-        padding: 0 0%; 
-        margin-top: 75px;       
+        padding: 75px 0%; 
+        margin-top: 0px;       
     }
     .home-txt{
         width: 50%;
         height: 100%;
         margin: auto;
-        padding: 20% 0 0 20px;
+        padding:  70px 0 0 20px;
         display: block;
         justify-content: center;
         align-items: center;
@@ -203,7 +203,7 @@ Grandes telas: acima de 1200px
         border-radius: 50%;             
     }
     .home-img{
-        background: url(/img/imagem-home.png);
+        background-image: url(/img/imagem-home.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -212,10 +212,17 @@ Grandes telas: acima de 1200px
         justify-content: center;
         align-items: center;
 
-        width: 100%;
+        width: 50%;
         height: 100%;
-        margin: 0 0 0 0;
-        padding: 0px 0;
+        margin: 0;
+        padding: 0;
+    }
+    .home-img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
     }
 /*  ----------  SECTION SOBRE  ----------  */
     main .sobre{
@@ -322,6 +329,7 @@ Grandes telas: acima de 1200px
     }
 /*  ----------  SECTION ESPECIALIDADES  ----------  */
     main .skills{
+        max-width: 1000px;
         width: 100%;
         height: 100%;
         display: block;
@@ -330,6 +338,8 @@ Grandes telas: acima de 1200px
         margin: 0 0 0 0;
         padding: 100px 10%;
         background: var(--cor5);
+        border-radius: 10px;
+
     }
     main .skills .titulo{
         text-align: center;
@@ -428,9 +438,9 @@ Grandes telas: acima de 1200px
     }
     /*  ----------  SECTION PORTIFÓLIO  ----------  */
     main .portifolio{
-        width: 100vw;
+        max-width: 1000px;
+        width: 100%;
         height: 700px;
-
         display: block;
         justify-content: center;
         align-items: center;
@@ -489,7 +499,8 @@ Grandes telas: acima de 1200px
     }
 /*  ----------  SECTION CONTATOS  ----------  */
     main .contatos{
-        width: 100vw;
+        max-width: 1000px;
+        width: 100%;
         height:1200px;
         margin: 0 0;
         padding: 95px 7%;
@@ -559,7 +570,7 @@ Grandes telas: acima de 1200px
     }
 /*  ----------  SECTION FOOTER  ----------  */
     footer{
-        width: 100vw;
+        width: 100%;
         height: 300px;
         display: block;
         justify-content: center;
