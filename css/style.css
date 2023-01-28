@@ -137,7 +137,6 @@ p{
         text-shadow: #00000094 2px 3px 3px;
 
     }
-
 /*  *************  SECTION HOME  ****************  */
     main {
         margin-top: 0px;
@@ -150,19 +149,19 @@ p{
     }
     .home-img{
         background-color: var(--cor5);
-        background-image: url(/img/imagem-home.png);
+        background: url(../img/imagem-home.png);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
 
         display: flex;
         justify-content: center;
         align-items: center;
 
         width: 100%;
-        height: 35%;
+        height: 20%;
         margin: 0 0 0 0;
-        padding: 0px 0;
+        padding: 0 0;
     }
     .home-img img{
         display: flex;
@@ -234,7 +233,6 @@ p{
         font-size: 30px;
         border-radius: 50%;             
     }
-
 /*  ----------  SECTION SOBRE  ----------  */
     main .sobre{
         
@@ -284,7 +282,6 @@ p{
         color: var(--cor5);
         font-size: var(--fonte-tam-grande);
     }
-
 /*  ----------  SECTION SOLUÇÕES  ----------  */
     main .solucoes{
         width: 100vw;
@@ -330,7 +327,6 @@ p{
         color: var(--cor2);
         padding: 10px;
     }
-
 /*  ----------  SECTION ESPECIALIDADES  ----------  */
     main .skills{
 
@@ -349,7 +345,6 @@ p{
     main .skills h2{
         text-align: center;
     }
-
     main .skills .skills-left{
         margin: 50px 7%;
         padding: 0 0 25px 0 ;
@@ -438,8 +433,6 @@ p{
         background: var(--cor1);
         color: var(--cor0);
     }
-
-
 /*  ----------  SECTION PORTIFOLIO  ----------  */
     main .portifolio{
         width: 100vw;
@@ -492,8 +485,6 @@ p{
         transition: all .45s ease;
         transform: scale(1.1);
     }
-
-
 /*  ----------  SECTION CONTATOS  ----------  */
     main .contatos{
         width: 100vw;
@@ -564,8 +555,6 @@ p{
         transform: scale(1.01);
         cursor: pointer;
     }
-
-
 /*  ----------  SECTION FOOTER  ----------  */
     footer{
         width: 100vw;

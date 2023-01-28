@@ -64,78 +64,73 @@ Grandes telas: acima de 1200px
 @media screen and (min-width: 1025px) and (max-width:1366px) {
 
 /*  ----------  SESSÃO HEADER  ----------  */   
-header{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    background: var(--cor5);
-    margin: auto;
-    top: 0;
-    left: 0;
-    z-index: 10001;
-}
-header nav{
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 80px;
-    margin: auto;
-    padding: 0 2%;
-    border-bottom: var(--cor2) solid 3px;
-}
-header .logo a h1{
-    font-size: var(--fonte-tam-normal);
-    font-weight: 700;
-    line-height: 15px;
-    color: var(--cor0);
-}
-header .logo span {
-    color: var(--cor2);
-}
-header nav .nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0px;
-    padding: 5px;
-}
-header nav .nav-list a{
-    font-size: var(--fonte-tam-normal);
-    color: var(--cor2);
-    padding: 0 5px;
-    transition: all .3s ease;
-}
-header nav .nav-list a:hover{
-    color: var(--cor0);    
-}
-header input, label{
-    display: none;
-}    
-header .aviso{
-    background: rgb(255, 247, 0);
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-header .aviso p{
-    color: #000000;
-    text-shadow: #000000 10px 10px 10px 10px;
-     
-}
-
-
+    header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        background: var(--cor5);
+        margin: auto;
+        top: 0;
+        left: 0;
+        z-index: 10001;
+    }
+    header nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin: auto;
+        padding: 0 2%;
+        border-bottom: var(--cor2) solid 3px;
+    }
+    header .logo a h1{
+        font-size: var(--fonte-tam-normal);
+        font-weight: 700;
+        line-height: 15px;
+        color: var(--cor0);
+    }
+    header .logo span {
+        color: var(--cor2);
+    }
+    header nav .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        padding: 5px;
+    }
+    header nav .nav-list a{
+        font-size: var(--fonte-tam-normal);
+        color: var(--cor2);
+        padding: 0 5px;
+        transition: all .3s ease;
+    }
+    header nav .nav-list a:hover{
+        color: var(--cor0);    
+    }
+    header input, label{
+        display: none;
+    }    
+    header .aviso{
+        background: rgb(255, 247, 0);
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    header .aviso p{
+        color: #000000;
+        text-shadow: #000000 10px 10px 10px 10px;     
+    }
 /*  *************  SECTION HOME  ****************  */
-    .home{ background: orange;
+    .home{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
         max-width: 1200px;
-        
+
         height: 100vh;
         margin: auto;
         padding: 0 0%;        
@@ -205,7 +200,7 @@ header .aviso p{
         font-size: 30px;
         border-radius: 50%;             
     }
-    .home-img{ background: yellow;
+    .home-img{
         background-image: url(/img/imagem-home.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -227,10 +222,9 @@ header .aviso p{
         width: 100%;
         height: 80%;
     }
+    /*  ----------  SECTION SOBRE  ----------  */
 
-/*  ----------  SECTION SOBRE  ----------  */
-
-    main .sobre{ background: green;
+    main .sobre{
         display: block;
         justify-content: center;
         align-items: center;
@@ -297,10 +291,8 @@ header .aviso p{
         background: var(--cor1);
         color: var(--cor0);
     }
-
-
     /*  ----------  SECTION SOLUÇÕES  ----------  */
-    main .solucoes{ background:yellow ;
+    main .solucoes{
         display: block;
         justify-content: center;
         align-items: center;
@@ -359,9 +351,8 @@ header .aviso p{
         color: var(--cor2);
         padding: 10px;
     }
-
     /*  ----------  SECTION ESPECIALIDADES  ----------  */
-    main .skills{ background: blue;
+    main .skills{ 
         max-width: 1200px;
         height: 700px;
         display: block;
@@ -473,9 +464,8 @@ header .aviso p{
         display: none;
         margin: 0 0 0 7%;
     }
-
     /*  ----------  SECTION PORTIFÓLIO  ----------  */
-    main .portifolio{ background: white;
+    main .portifolio{
         max-width: 1200px;
         width: 100vw;
         height: 700px;
@@ -533,11 +523,8 @@ header .aviso p{
         transition: all .45s ease;
         transform: scale(1.1);
     }
-
-
     /*  ----------  SECTION CONTATOS  ----------  */
-
-    main .contatos{ background: green;
+    main .contatos{
         max-width: 1200px;
         width: 100vw;
         height: 700px;
@@ -626,9 +613,8 @@ header .aviso p{
         transform: scale(1.01);
         cursor: pointer;
     }
-
     /*  ----------  SECTION FOOTER  ----------  */
-    footer{ background: yellow;
+    footer{
         max-width: 1200px;
         height: 300px;
         display: block;
@@ -636,7 +622,7 @@ header .aviso p{
         align-items: center;
         margin: auto;
         padding: 50px 7%;
-        /*background-color: var(--cor5);*/
+        background-color: var(--cor5);
         color: var(--cor0);
         border-top: var(--cor2) solid 2px;
     }
