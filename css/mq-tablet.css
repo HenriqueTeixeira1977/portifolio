@@ -126,7 +126,8 @@ Grandes telas: acima de 1200px
          
     }
 /*  *************  SECTION HOME  ****************  */
-    .home{
+
+.home{
         display: flex;
         justify-content: space-between;
         align-items: center;
