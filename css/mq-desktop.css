@@ -53,8 +53,8 @@ Grandes telas: acima de 1200px
 */
 
 
-/*  VERSION TABLET  */
-@media screen and (min-width: 1024px) and (max-width:1920px) {
+/*  VERSION DESKTOP  */
+@media screen and (min-width: 1024px) and (max-width:2400px) {
 
 /*  ----------  SESSÃO HEADER  ----------  */   
     header{
@@ -62,23 +62,25 @@ Grandes telas: acima de 1200px
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 70px;
+        height: 100px;
         margin: auto;
         position: fixed;
         background: var(--cor5);
-        z-index: 10001;       
+        z-index: 10001; 
+        background-color: #00000079;  
+        top: 0;
+
     }
-    header nav{
+    header nav{background: rgba(102, 51, 153, 0);
         width: 90%;
-        max-width: 1200px;
+        /*max-width: 1200px;*/
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
+        height: 70px;
         margin: auto;
     }
     header .logo a h1{
-
         font-size: var(--fonte-tam-normal);
         font-weight: 700;
         line-height: 15px;
@@ -88,7 +90,6 @@ Grandes telas: acima de 1200px
         color: var(--cor2);
     }
     header nav .nav-list {
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -96,7 +97,6 @@ Grandes telas: acima de 1200px
         padding: 5px;
     }
     header nav .nav-list a{
-
         font-size: var(--fonte-tam-normal);
         color: var(--cor2);
         padding: 0 5px;
@@ -109,32 +109,25 @@ Grandes telas: acima de 1200px
         display: none;
     }
     header .btn-orc li a{
-        border: #ffb73b solid 2px;
+        background: var(--cor2);
+        color: var(--cor5);
+        border: var(--cor0) solid 2px;
         margin: 0 0 0 10px;
-        padding: 0 10px;
-    }    
-    header .aviso{
-        background: rgb(255, 247, 0);
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-    header .aviso p{
-        color: #000000;
-        text-shadow: #000000 10px 10px 10px 10px;     
-    }
+        padding: 0 20px 3px 20px;
+        border-radius: 5px;
+    }  
+
 /*  *************  SECTION HOME  ****************  */
     .home{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row-reverse;
-        max-width: 1024px;
-        width: 100%;
+        width: 90%;
         height: 600px;
         margin: auto;
-
-        padding: 0px 0%; 
+        padding: 0px 3%; 
+        margin-top: 100px;
     }
     .home-txt{
         width: 50%;
@@ -144,20 +137,21 @@ Grandes telas: acima de 1200px
         align-items: flex-start;
     }
     .home-txt h1{
-        font-size: var(--fonte-tam-xxgrande);
-        line-height: 40px;
+        font-size: 70px;
+        line-height: 60px;
         color: var(--cor0);
         margin-bottom: 10px;
         text-shadow: #0000007f 10px 10px 10px;
+        margin-bottom: 30px;
     }
     .home-txt span{
         color: var(--cor2);
     }
     .home-txt p{
         color: var(--cor0);
-        font-size: var(--fonte-tam-grande);
-        line-height: 20px;
-        margin-bottom: 20px;
+        font-size: var(--fonte-tam-xgrande);
+        line-height: 30px;
+        margin-bottom: 70px;
     }
     .home-txt .btn1{
         border: none;
@@ -200,29 +194,18 @@ Grandes telas: acima de 1200px
         border-radius: 50%;             
     }
     .home-img{
-
         background-image: url(/img/imagem-home.png);
-        background-position: center;
+        background-position:center;
         background-repeat: no-repeat;
-        background-size: contain;
-
+        background-size: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
-
         width: 50%;
-        height: 65%;
-        margin: 0 0 0 0;
-        padding: 0;
+        height: 100%;
+        z-index: 10000;
     }
-    .home-img img{
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 80%;
-    }
     /*  ----------  SECTION SOBRE  ----------  */
 
      main .sobre{
