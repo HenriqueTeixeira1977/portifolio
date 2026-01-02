@@ -102,7 +102,7 @@ p{
         align-items: center;
         padding: 5%;
         position: fixed;
-        background-color: var(--cor5);
+        background-color: #000000;
         z-index: 1000;
 
         border-bottom: var(--cor2) solid 3px;
@@ -206,51 +206,7 @@ p{
         padding: 0 0 0 0;
     }
 
-/*  ----------  SECTION SOBRE  ----------  */
-    main .sobre{
-        width: 100%;
-        height: 125vh;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        margin: 50px 0 50px 0;
-        padding: 95px 0 0 0;
-        text-align: center;
-    }
-    main .sobre .titulo {
-        text-align: center;
-    }
 
-    .sobre .sobre-txt {
-        width: 100%;
-        height: 80vh;
-        text-align: center;
-        padding: 0% 5%;
-    }
-    .sobre .img-henrique{
-        width: 100%;
-        margin-bottom: 0px;
-        margin: auto;
-        padding: 0px;
-    }  
-    .sobre .img-henrique img{
-        width: 70%;
-    }
-    .sobre .sobre-txt h2 {
-        margin: 20px 0;
-    }
-    .sobre .sobre-txt h3 {
-        font-size: 1.8rem;
-        font-weight: bold;
-        margin: 20px 0 0 0;
-    }
-    .sobre .sobre-txt p {
-        font-size: 1.3rem;
-        color: var(--cor0);
-        text-align: justify;
-        margin: 0 0 20px 0;
-        line-height: 30px;
-    }  
 
 /*  ----------  SECTION SOLUÇÕES  ----------  */
     main .solucoes{
@@ -438,6 +394,52 @@ p{
         transition: all .45s ease;
         transform: scale(1.1);
     }
+
+    /*  ----------  SECTION SOBRE  ----------  */
+    main .sobre{
+        width: 100%;
+        height: 125vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0 50px 0;
+        padding: 95px 0 0 0;
+        text-align: center;
+    }
+    main .sobre .titulo {
+        text-align: center;
+    }
+    .sobre .sobre-txt {
+        width: 100%;
+        height: 80vh;
+        text-align: center;
+        padding: 0% 5%;
+    }
+    .sobre .img-henrique{
+        width: 100%;
+        margin-bottom: 0px;
+        margin: auto;
+        padding: 0px;
+    }  
+    .sobre .img-henrique img{
+        width: 70%;
+    }
+    .sobre .sobre-txt h2 {
+        margin: 20px 0;
+    }
+    .sobre .sobre-txt h3 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 20px 0 0 0;
+    }
+    .sobre .sobre-txt p {
+        font-size: 1.3rem;
+        color: var(--cor0);
+        text-align: justify;
+        margin: 0 0 20px 0;
+        line-height: 30px;
+    }  
+
 /*  ----------  SECTION CONTATOS  ----------  */
     main .contatos{
         width: 100vw;

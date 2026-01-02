@@ -90,11 +90,11 @@ Grandes telas: acima de 1200px
         position: fixed;
         background: var(--cor5);
         z-index: 10001; 
-        background-color: #5d5d5d;  
+        background-color: #ff0000;  
         top: 0;
     }
-    header nav{background: rgba(102, 51, 153, 0);
-        width: 90%;
+    header nav{background: rgb(102, 51, 153);
+        width: 85%;
         /*max-width: 1200px;*/
         display: flex;
         justify-content: space-between;
